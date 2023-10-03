@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link href="style/style.min.css" rel="stylesheet" />
+  </head>
+  <body class="vzd-body">
+    <div class="vzd-left-bar">
+      <img src="images/logo.svg" class="vzd-logo" />
+      <div class="vzd-app-title">Kadastra informācijas sistēma</div>
+      <div class="vzd-app-small-title">KADIS</div>
+
+      <ul class="vzd-menu">
+        <li>
+          <a href="#"
+            ><img src="vzd-icons/darbvirsma.svg"/>Darbvirsma</a
+          >
+        </li>
+        <li class="vzd-active">
+          <a href="#"
+            ><img src="vzd-icons/zemes-vienibas.svg"/>Zemes vienības</a
+          >
+        </li>
+      </ul>
+
+      <div class="vzd-user">
+        <div class="vzd-user-abr">JB</div>
+        <div class="vzd-user-name">Jānis Bērziņš</div>
+      </div>
+
+      <div class="vzd-menu-toggle">
+        <span class="k-icon k-i-chevron-left"></span>
+      </div>
+    </div>
+
+    <div class="vzd-container">
+      <div class="vzd-header"><h1><img src="vzd-icons/zemes-vienibas.svg"/> Zemes vienības</h1></div>
+      <div class="vzd-content-holder">...</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.vzd-menu-toggle').click(function() {
+                $('body').toggleClass('vzd-left-bar-collapsed');
+            });
+        });
+    </script>
+  </body>
+</html>

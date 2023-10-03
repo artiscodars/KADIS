@@ -1,0 +1,16 @@
+{
+  "html.format.maxPreserveNewLines": 1,
+  "saveAndRun": {
+    "commands": [
+      {
+        "match": "\\.scss$",
+        "cmd": "sass scss/vzd-style.scss style/style.min.css --style compressed"
+      },
+      {
+        "match": "\\.scss$",
+        "cmd": "sass scss/vzd-style.scss style/style.css"
+      }
+    ]
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
