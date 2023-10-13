@@ -1,8 +1,11 @@
-@import "https://kendo.cdn.telerik.com/themes/6.7.0/default/default-main.css";
-
 $black: #000;
 $vzd_sarkans: #840b55;
 $white: #fff;
+
+$kendo-color-primary: $vzd_sarkans;
+
+@import "../node_modules/@progress/kendo-theme-default/dist/all.scss";
+@import "vzd-kendo-adjustments.scss";
 
 html {
   height: 100%;
@@ -20,6 +23,7 @@ html {
   bottom: 0;
   top: 0;
   width: 220px;
+  z-index: 1;
 }
 .vzd-logo {
   margin: auto;
@@ -50,34 +54,92 @@ html {
   width: 100%;
   padding: 20px 0;
   margin: 0;
-  li {
+
+  > li {
     list-style: none;
-    a {
+    > a {
       display: flex;
       align-items: center;
-      line-height: 40px;
+      line-height: 30px;
       color: $black;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 500;
-      img {
-        margin-right: 15px;
-        margin-left: 15px;
-		width: 18px;
-		height: 18px;
+
+      &:hover {
+        background-color: #e0e0e0;
+        color: $black;
+      }
+
+      &::before {
+        font-family: "Material Symbols Outlined";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $vzd_sarkans;
       }
     }
-	&.vzd-active {
-		a {
-			background-color: #e0e0e0;
-		}
-	}
+
+    &.k-state-border-right {
+      > a {
+        background-color: #e0e0e0;
+      }
+    }
+
+    &.home {
+      > a {
+        &::before {
+          content: "\e88a";
+        }
+      }
+    }
+
+    &.general {
+      > a {
+        &::before {
+          content: "\e46e";
+        }
+      }
+    }
+
+    &.components {
+      > a {
+        &::before {
+          content: "\e3e8";
+        }
+      }
+    }
+
+    .submenu {
+      width: 200px;
+      height: unset;
+      a {
+        height: unset;
+      }
+    }
+  }
+
+  &.vzd-active {
+    a {
+      background-color: #e0e0e0;
+    }
+  }
+
+  .k-menu-link {
+    position: relative;
+  }
+
+  .k-menu-expand-arrow {
+    position: absolute;
+    right: 0px;
+    margin: 0 !important;
+    color:$kendo-color-primary;
   }
 }
+
 .vzd-container {
   background: #fff;
   min-height: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #e0e0e0;
 }
 
 .vzd-header {
@@ -87,14 +149,26 @@ html {
     color: $black;
     font-weight: 600;
     margin: 0;
+    margin-bottom: 20px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    img {
-      margin-right: 10px;
-    }
+    
+  }
+
+h2 {
+    font-size: 18px;
+    color: $black;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    
   }
 }
+
+
 
 .vzd-content-holder {
   padding: 20px;
@@ -107,7 +181,30 @@ html {
   height: 40px;
   display: flex;
   align-items: center;
+  width: 100%;
+  &::after {
+    content: "\e5df";
+    display: block;
+    margin-left: 0px;
+    font-family: "Material Symbols Outlined";
+    font-size: 24px;
+    margin-right: 5px;
+    color: $kendo-color-primary;
+    font-weight: normal;
+  
+  }
 }
+
+.vzd-left-bar-collapsed {
+  .vzd-user {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+
 .vzd-user-abr {
   width: 30px;
   height: 30px;
@@ -129,15 +226,27 @@ html {
   border-radius: 0 2px 2px 0;
   right: 1px;
   transform: translateX(100%);
-  background: #edecec;
+  background: #faf9f9;
+
+  border: 1px solid #e0e0e0;
+  border-left: 0;
   cursor: pointer;
-  span {
+  &::before {
+    content: "\e5cb";
     color: $vzd_sarkans;
+    font-family: "Material Symbols Outlined";
+    font-size: 24px;
     margin-right: 5px;
   }
 }
 
 .vzd-left-bar-collapsed {
+  .vzd-menu-toggle {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
   padding-left: 50px;
 
   .vzd-logo {
@@ -151,18 +260,125 @@ html {
   }
 
   .vzd-menu {
-	li {
-	  a {
-		font-size: 0;
-	  }
-	}
+    > li {
+      > a.k-menu-link {
+        font-size: 0;
+        padding: 0;
+        line-height: 38px;
+        text-align: center;
+
+        &::before {
+          margin-left: 12px;
+        }
+      }
+    }
   }
 
-  .vzd-app-title, .vzd-user-name {
+  .vzd-app-title,
+  .vzd-user-name {
     display: none;
   }
 
   .vzd-app-small-title {
     display: block;
+  }
+}
+
+#user-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    a {
+      display: block;
+      text-decoration: none;
+      line-height: 30px;
+      display: flex;
+      color: #000;
+      font-weight: 600;
+      &::before {
+        font-family: "Material Symbols Outlined";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $kendo-color-primary;
+        font-weight: normal;
+      }
+    }
+    &.user-profile {
+      a {
+        &::before {
+          content: "\e7fd";
+        }
+      }
+    }
+
+    &.user-settings {
+      a {
+        &::before {
+          content: "\e8b8";
+        }
+      }
+    }
+  }
+}
+
+
+.vzd-general {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e46e";
+        font-family: "Material Symbols Outlined";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $kendo-color-primary;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.vzd-components {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e3e8";
+        font-family: "Material Symbols Outlined";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $kendo-color-primary;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.vzd-user-profile {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e7fd";
+        font-family: "Material Symbols Outlined";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $kendo-color-primary;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.vzd-settings {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e8b8";
+        font-family: "Material Symbols Outlined";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $kendo-color-primary;
+        font-weight: normal;
+      }
+    }
   }
 }
