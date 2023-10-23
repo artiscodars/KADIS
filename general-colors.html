@@ -4,13 +4,31 @@
     <meta charset="UTF-8" />
     <title>KADIS dizaina sistēma</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
@@ -20,17 +38,18 @@
     <!-- here are all app f-ions and reusable elements -->
     <script src="js/app-setup.js"></script>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-general">
     <div class="vzd-left-bar">
-      
-
       <div id="menu-container"></div>
 
       <div id="user-container"></div>
-     
+
       <div class="vzd-menu-toggle"></div>
     </div>
 
@@ -39,9 +58,126 @@
         <h1>Vispārīgi</h1>
         <h2>Krāsas</h2>
       </div>
-      
-      <div class="vzd-content-holder">...</div>
-    </div>
 
+      <div class="vzd-content-holder">
+        <p>
+          Sistēmās jāizmanto zemāk uzskaitītās krāsas. Krāsām SCSS ir definēti
+          mainīgie, piemēram, <b>$kendo-color-primary</b>.
+        </p>
+   
+        <h3 class="ds">Pamatkrāsas</h3>
+        <div class="bd-example">
+          <div class="k-columns-5 k-gap-2 k-w-full k-h-full">
+            <div>
+              <div class="k-card">
+                <div
+                  class="k-card-body k-text-center k-bg-primary k-color-white"
+                >
+                  SCSS: $kendo-color-primary <br />
+                  HEX: #840b55
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div
+                  class="k-card-body k-text-center k-bg-secondary k-color-white"
+                >
+                  SCSS: $kendo-color-secondary<br />
+                  HEX: #666666
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="ds">Sekundārās krāsas</h3>
+
+        <div class="bd-example">
+          <div class="k-columns-5 k-gap-2 k-w-full k-h-full">
+            <div>
+              <div class="k-card">
+                <div
+                  class="k-card-body k-text-center k-bg-tertiary k-color-white"
+                >
+                  SCSS: $kendo-color-tertiary<br />
+                  HEX: #227b8b
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div class="k-card-body k-text-center k-bg-info k-color-white">
+                  SCSS: $kendo-color-info<br />
+                  HEX: #0057b8
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div
+                  class="k-card-body k-text-center k-bg-success k-color-white"
+                >
+                  SCSS: $kendo-color-success<br />
+                  HEX: #4a773c
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div
+                  class="k-card-body k-text-center k-bg-warning k-color-white"
+                >
+                  SCSS: $kendo-color-warning<br />
+                  HEX: #e57200
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div class="k-card-body k-text-center k-bg-error k-color-white">
+                  SCSS: $kendo-color-error<br />
+                  HEX: #e4002b
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="ds">Pelēkie toņi</h3>
+        <p>
+          Papildus esošajām krasām dizaina sistēma tiek papildināta ar
+          pelēkajiem toņiem, kas var tik izmantoti pēc nepieciešamības.
+        </p>
+        <div class="bd-example">
+          <div class="k-columns-5 k-gap-2 k-w-full k-h-full">
+            <div>
+              <div class="k-card">
+                <div class="k-card-body k-text-center k-bg-dark k-color-white">
+                  SCSS: $kendo-color-dark<br />
+                  HEX: #424242
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div class="k-card-body k-text-center k-bg-grey k-color-dark">
+                  SCSS: $kendo-color-grey<br />
+                  HEX: #d9d9d9
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="k-card">
+                <div class="k-card-body k-text-center k-bg-light k-color-dark">
+                  SCSS: $kendo-color-light<br />
+                  HEX: #ebebeb
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </body>
 </html>

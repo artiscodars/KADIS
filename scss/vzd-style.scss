@@ -1,18 +1,19 @@
-$black: #000;
-$vzd_sarkans: #840b55;
-$white: #fff;
-
-$kendo-color-primary: $vzd_sarkans;
-
+@import "vzd-style-variables.scss";
 @import "../node_modules/@progress/kendo-theme-default/dist/all.scss";
+@import "../node_modules/@progress/kendo-theme-utils/dist/all.scss";
 @import "vzd-kendo-adjustments.scss";
-
+@import "vzd-ds-styles.scss"; // Necessary for design system styles
+ 
 html {
   height: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $kendo-font-family-sans-serif;	
+}
+
+a {
+  color:$kendo-color-info;
 }
 .vzd-body {
-  background: #faf9f9;
+  background: $kendo-color-light;
   padding-left: 220px;
   margin: 0;
   height: 100%;
@@ -32,7 +33,7 @@ html {
 .vzd-app-title {
   text-align: center;
   font-size: 20px;
-  color: $black;
+  color: $kendo-body-text;
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 12px;
@@ -43,7 +44,7 @@ html {
   display: none;
   text-align: center;
   font-size: 20px;
-  color: $black;
+  color: $kendo-body-text;
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 12px;
@@ -61,27 +62,27 @@ html {
       display: flex;
       align-items: center;
       line-height: 30px;
-      color: $black;
+      color: $kendo-body-text;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 500;
 
       &:hover {
-        background-color: #e0e0e0;
-        color: $black;
+        background-color: $kendo-color-grey;
+        color: $kendo-body-text;
       }
 
       &::before {
         font-family: "Material Symbols Outlined";
         font-size: 24px;
         margin-right: 5px;
-        color: $vzd_sarkans;
+        color: $kendo-color-primary;
       }
     }
 
     &.k-state-border-right {
       > a {
-        background-color: #e0e0e0;
+        background-color: $kendo-color-grey;
       }
     }
 
@@ -139,14 +140,15 @@ html {
 .vzd-container {
   background: #fff;
   min-height: 100%;
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid $kendo-component-border;
 }
 
 .vzd-header {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
+
   h1 {
     font-size: 20px;
-    color: $black;
+    color: $kendo-body-text;
     font-weight: 600;
     margin: 0;
     margin-bottom: 20px;
@@ -158,7 +160,7 @@ html {
 
 h2 {
     font-size: 18px;
-    color: $black;
+    color: $kendo-body-text;
     font-weight: 500;
     margin: 0;
     text-transform: uppercase;
@@ -171,7 +173,9 @@ h2 {
 
 
 .vzd-content-holder {
-  padding: 20px;
+  padding:20px;
+
+
 }
 
 .vzd-user {
@@ -210,12 +214,12 @@ h2 {
   height: 30px;
   margin-left: 10px;
   border-radius: 50%;
-  background: #840b55;
+  background: $kendo-color-primary;
   margin-right: 10px;
   text-align: center;
   line-height: 30px;
   font-size: 16px;
-  color: $white;
+  color: $kendo-color-white;
 }
 .vzd-menu-toggle {
   position: absolute;
@@ -226,14 +230,14 @@ h2 {
   border-radius: 0 2px 2px 0;
   right: 1px;
   transform: translateX(100%);
-  background: #faf9f9;
+  background: $kendo-color-light;
 
-  border: 1px solid #e0e0e0;
+  border: 1px solid $kendo-component-border;
   border-left: 0;
   cursor: pointer;
   &::before {
     content: "\e5cb";
-    color: $vzd_sarkans;
+    color: $kendo-color-primary;
     font-family: "Material Symbols Outlined";
     font-size: 24px;
     margin-right: 5px;
@@ -294,7 +298,7 @@ h2 {
       text-decoration: none;
       line-height: 30px;
       display: flex;
-      color: #000;
+      color: $kendo-body-text;
       font-weight: 600;
       &::before {
         font-family: "Material Symbols Outlined";
