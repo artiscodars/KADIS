@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@progress/kendo-font-icons": "^2.0.0",
-    "@progress/kendo-theme-default": "^7.0.1",
-    "highlight.js": "^11.9.0"
+    "@progress/kendo-theme-default": "^7.0.1"
   }
 }
