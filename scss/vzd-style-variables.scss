@@ -1,5 +1,3 @@
-$kendo-font-size:	14px;
-
 $kendo-color-primary: #840b55;
 $kendo-color-primary-darker:#5f093e;
 $kendo-color-secondary:#666666;
@@ -11,12 +9,26 @@ $kendo-color-error: #e4002b;
 $kendo-color-light: #faf9f9;
 $kendo-body-text: #2d2926;
 $kendo-base-bg:  #faf9f9;
-
 $kendo-component-border: #bcbcbc;
 
 //additional colors
 
 $kendo-color-grey: #d9d9d9;
-.k-bg-grey {
-    background-color: $kendo-color-grey;
-}
+
+
+$kendo-font-size-xs: 0.7rem !default;
+$kendo-font-size-sm: 0.8rem !default;
+$kendo-font-size:	0.9rem !default;
+$kendo-font-size-md: $kendo-font-size !default;
+$kendo-font-size-lg: 1.1rem !default;
+$kendo-font-size-xl: 1.2rem !default;
+
+$kendo-font-family-sans-serif: 'RobustaTLPro-Regular';
+
+
+
+
+
+
+
+

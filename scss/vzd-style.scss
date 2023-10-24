@@ -1,9 +1,12 @@
 @import "vzd-style-variables.scss";
+@import "../icons/css/fontello.css";
 @import "../node_modules/@progress/kendo-theme-default/dist/all.scss";
 @import "../node_modules/@progress/kendo-theme-utils/dist/all.scss";
+@import "../node_modules/@progress/kendo-font-icons/scss/all.scss"; 
 @import "vzd-kendo-adjustments.scss";
+
 @import "vzd-ds-styles.scss"; // Necessary for design system styles
- 
+
 html {
   height: 100%;
   font-family: $kendo-font-family-sans-serif;	
@@ -73,7 +76,7 @@ a {
       }
 
       &::before {
-        font-family: "Material Symbols Outlined";
+        font-family: "WebComponentsIcons";
         font-size: 24px;
         margin-right: 5px;
         color: $kendo-color-primary;
@@ -89,7 +92,7 @@ a {
     &.home {
       > a {
         &::before {
-          content: "\e88a";
+          content: "\e034";
         }
       }
     }
@@ -97,7 +100,7 @@ a {
     &.general {
       > a {
         &::before {
-          content: "\e46e";
+          content: "\e666";
         }
       }
     }
@@ -105,7 +108,7 @@ a {
     &.components {
       > a {
         &::before {
-          content: "\e3e8";
+          content: "\e918";
         }
       }
     }
@@ -147,9 +150,6 @@ a {
   padding: 20px 20px 0px 20px;
 
   h1 {
-    font-size: 20px;
-    color: $kendo-body-text;
-    font-weight: 600;
     margin: 0;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -159,9 +159,6 @@ a {
   }
 
 h2 {
-    font-size: 18px;
-    color: $kendo-body-text;
-    font-weight: 500;
     margin: 0;
     text-transform: uppercase;
     display: flex;
@@ -190,7 +187,7 @@ h2 {
     content: "\e5df";
     display: block;
     margin-left: 0px;
-    font-family: "Material Symbols Outlined";
+    font-family: "WebComponentsIcons";
     font-size: 24px;
     margin-right: 5px;
     color: $kendo-color-primary;
@@ -236,9 +233,9 @@ h2 {
   border-left: 0;
   cursor: pointer;
   &::before {
-    content: "\e5cb";
+    content: "\e016";
     color: $kendo-color-primary;
-    font-family: "Material Symbols Outlined";
+    font-family: "WebComponentsIcons";
     font-size: 24px;
     margin-right: 5px;
   }
@@ -301,7 +298,7 @@ h2 {
       color: $kendo-body-text;
       font-weight: 600;
       &::before {
-        font-family: "Material Symbols Outlined";
+        font-family: "WebComponentsIcons";
         font-size: 24px;
         margin-right: 5px;
         color: $kendo-color-primary;
@@ -311,7 +308,7 @@ h2 {
     &.user-profile {
       a {
         &::before {
-          content: "\e7fd";
+          content: "\e801";
         }
       }
     }
@@ -319,7 +316,7 @@ h2 {
     &.user-settings {
       a {
         &::before {
-          content: "\e8b8";
+          content: "\e13a";
         }
       }
     }
@@ -331,8 +328,8 @@ h2 {
   .vzd-header {
     h1 {
       &::before {
-        content: "\e46e";
-        font-family: "Material Symbols Outlined";
+        content: "\e666";
+        font-family: "WebComponentsIcons";
         font-size: 24px;
         margin-right: 5px;
         color: $kendo-color-primary;
@@ -346,8 +343,8 @@ h2 {
   .vzd-header {
     h1 {
       &::before {
-        content: "\e3e8";
-        font-family: "Material Symbols Outlined";
+        content: "\e918";
+        font-family: "WebComponentsIcons";
         font-size: 24px;
         margin-right: 5px;
         color: $kendo-color-primary;
@@ -362,7 +359,7 @@ h2 {
     h1 {
       &::before {
         content: "\e7fd";
-        font-family: "Material Symbols Outlined";
+        font-family: "WebComponentsIcons";
         font-size: 24px;
         margin-right: 5px;
         color: $kendo-color-primary;
@@ -377,7 +374,7 @@ h2 {
     h1 {
       &::before {
         content: "\e8b8";
-        font-family: "Material Symbols Outlined";
+        font-family: "WebComponentsIcons";
         font-size: 24px;
         margin-right: 5px;
         color: $kendo-color-primary;

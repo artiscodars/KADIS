@@ -1,7 +1,56 @@
+@font-face {
+    font-family: 'RobustaTLPro-Regular';
+    src: url(../fonts/356EBC_27_0.woff2) format('woff2'),url(../fonts/356EBC_27_0.woff) format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobustaTLPro-Medium';
+    src: url(../fonts/356EBC_29_0.woff2) format('woff2'),url(../fonts/356EBC_27_0.woff) format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobustaTLPro-Bold';
+    src: url(../fonts/356EBC_2B_0.woff2) format('woff2'),url(../fonts/356EBC_2B_0.woff) format('woff');
+    font-display: swap;
+}
+
+
+
+
 .k-card {
     margin-bottom: 15px;
 }
 
 .k-popover-callout.k-callout-s {
    left: 12%;
+}
+
+.k-bg-grey {
+    background-color: $kendo-color-grey;
+}
+
+h1, .h1 {
+    font-size: 1.4rem;
+}
+
+h2, .h2 {
+    font-size: 1.2rem;
+}
+
+h3, .h3 {
+    font-size: 1rem;
+}
+
+h4, .h4 {
+    font-size: 1rem;
+}
+
+h5, .h5 {
+    font-size: 1rem;
+}
+
+h6, .h6 {
+    font-size: 0.9rem;
 }
