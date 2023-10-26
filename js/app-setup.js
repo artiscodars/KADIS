@@ -61,6 +61,10 @@ function setupApp() {
               <a href="components-toasts.html">
               Izlecošie paziņojumi </a>
               </li>
+              <li>
+              <a href="components-menu.html">
+              Izvēlne </a>
+              </li>
               
               <li>
               <a href="components-tabs.html">

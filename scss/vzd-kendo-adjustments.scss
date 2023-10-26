@@ -23,6 +23,26 @@
     margin-bottom: 15px;
 }
 
+.k-listgroup {
+    .k-link {
+    justify-content: space-between;
+    &:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+}
+
+.k-breadcrumb {
+    background: transparent;
+    .k-breadcrumb-last-item {
+      a {
+        color: $kendo-body-text;
+      }
+    }
+  }
+
+
 .k-popover-callout.k-callout-s {
    left: 12%;
 }

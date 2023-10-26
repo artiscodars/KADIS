@@ -38,7 +38,6 @@
     <!-- here are all app f-ions and reusable elements -->
     <script src="js/app-setup.js"></script>
 
-    
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-general">
@@ -53,10 +52,40 @@
     <div class="vzd-container">
       <div class="vzd-header">
         <h1>Vispārīgi</h1>
-        <h2>Tipogrāfija</h2>
+      </div>
+      <div class="vzd-breadcrumb">
+        <nav id="breadcrumb"></nav>
+        <script>
+          $("#breadcrumb").kendoBreadcrumb({
+            navigational: true,
+            items: [
+              {
+                type: "rootitem",
+                href: "index.html",
+                text: "Sākums",
+                showText: false,
+                icon: "home",
+                showIcon: true,
+              },
+              {
+                type: "item",
+                href: "general-index.html",
+                text: "Vispārīgi",
+                showText: true,
+              },
+              {
+                type: "item",
+                //href: "/index",
+                text: "Tipogrāfija",
+                showText: true,
+              },
+            ],
+          });
+        </script>
       </div>
 
       <div class="vzd-content-holder">
+        <h2>Tipogrāfija</h2>
         <div class="row">
           <div class="col">
             <p>
@@ -64,32 +93,42 @@
               norādījumus, virsrakstus, saturu, sarakstus u.c.
             </p>
             <h2 class="st-title">Teksta burtu veidols un izmērs</h2>
-            <p>
-              Aplikācija izmanto burtu veidolu "RobustaTLPro-Regular".
-            </p>
+            <p>Aplikācija izmanto burtu veidolu "RobustaTLPro-Regular".</p>
             <script src="https://gist.github.com/artiscodars/38255dbed09065f3bce7959121421479.js"></script>
             <h2 class="st-title">Virsraksti</h2>
 
-
-           
-
-
             <div class="bd-example">
-              
               <h1>H1 - Sadaļu galvenais virsraksts</h1>
 
-               <h2>h2 - Otrā līmeņa virsraksts</h2>
+              <h2>h2 - Otrā līmeņa virsraksts</h2>
 
-                <h3>h3 - Trešā līmeņa virsraksts</h3>
+              <h3>h3 - Trešā līmeņa virsraksts</h3>
 
-                <h4>h4 - Ceturtā līmeņa virsraksts</h4>
+              <h4>h4 - Ceturtā līmeņa virsraksts</h4>
 
-                <h5>h5 - Piektā līmeņa virsraksts</h5>
+              <h5>h5 - Piektā līmeņa virsraksts</h5>
 
-                <h6>h6 - Sestā līmeņa virsraksts</h6>
+              <h6>h6 - Sestā līmeņa virsraksts</h6>
 
-                <script src="https://gist.github.com/artiscodars/35e6a9ef25843484992eb319c2385214.js"></script>
-             
+              <script src="https://gist.github.com/artiscodars/35e6a9ef25843484992eb319c2385214.js"></script>
+            </div>
+
+            <h2 class="st-title">Parasts teksts</h2>
+
+            <div class="bd-example">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas dignissim eleifend metus. Donec faucibus sem sit amet
+                tempor luctus. Aliquam eget ullamcorper felis. Integer pulvinar
+                dapibus pellentesque. Pellentesque volutpat nisi ut sem aliquet
+                rutrum. Ut molestie molestie quam. Nunc pretium id lacus eu
+                fringilla. Vivamus consequat est ornare, pellentesque neque
+                vitae, tincidunt ante. Aenean efficitur vel massa nec blandit.
+                Pellentesque facilisis tempor ligula, vitae venenatis massa
+                feugiat at. Donec dignissim, diam sed faucibus finibus, justo
+                nulla lobortis risus, id luctus ante lorem et lacus. Phasellus
+                vel tincidunt ligula, quis volutpat elit.
+              </p>
             </div>
           </div>
         </div>

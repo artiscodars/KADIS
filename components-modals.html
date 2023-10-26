@@ -4,13 +4,31 @@
     <meta charset="UTF-8" />
     <title>KADIS dizaina sistēma</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
@@ -20,29 +38,56 @@
     <!-- here are all app f-ions and reusable elements -->
     <script src="js/app-setup.js"></script>
 
-    
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
     <div class="vzd-left-bar">
-      
-
       <div id="menu-container"></div>
 
       <div id="user-container"></div>
-     
+
       <div class="vzd-menu-toggle"></div>
     </div>
 
     <div class="vzd-container">
       <div class="vzd-header">
         <h1>Komponentes</h1>
-        <h2>Modālie logi</h2>
       </div>
-      
-      <div class="vzd-content-holder">...</div>
-    </div>
+      <div class="vzd-breadcrumb">
+        <nav id="breadcrumb"></nav>
+        <script>
+          $("#breadcrumb").kendoBreadcrumb({
+            navigational: true,
+            items: [
+              {
+                type: "rootitem",
+                href: "index.html",
+                text: "Sākums",
+                showText: false,
+                icon: "home",
+                showIcon: true,
+              },
+              {
+                type: "item",
+                href: "components-index.html",
+                text: "Komponentes",
+                showText: true,
+              },
+              {
+                type: "item",
+                //href: "/index",
+                text: "Modālie logi",
+                showText: true,
+              },
+            ],
+          });
+        </script>
+      </div>
 
-    
+      <div class="vzd-content-holder">
+        <h2>Modālie logi</h2>
+        ...
+      </div>
+    </div>
   </body>
 </html>

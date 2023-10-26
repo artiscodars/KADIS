@@ -4,13 +4,31 @@
     <meta charset="UTF-8" />
     <title>KADIS dizaina sistēma</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
@@ -20,29 +38,349 @@
     <!-- here are all app f-ions and reusable elements -->
     <script src="js/app-setup.js"></script>
 
-    
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
     <div class="vzd-left-bar">
-      
-
       <div id="menu-container"></div>
 
       <div id="user-container"></div>
-     
+
       <div class="vzd-menu-toggle"></div>
     </div>
 
     <div class="vzd-container">
       <div class="vzd-header">
         <h1>Komponentes</h1>
-        <h2>Birkas</h2>
       </div>
-      
-      <div class="vzd-content-holder">...</div>
-    </div>
+      <div class="vzd-breadcrumb">
+        <nav id="breadcrumb"></nav>
+        <script>
+          $("#breadcrumb").kendoBreadcrumb({
+            navigational: true,
+            items: [
+              {
+                type: "rootitem",
+                href: "index.html",
+                text: "Sākums",
+                showText: false,
+                icon: "home",
+                showIcon: true,
+              },
+              {
+                type: "item",
+                href: "components-index.html",
+                text: "Komponentes",
+                showText: true,
+              },
+              {
+                type: "item",
+                //href: "/index",
+                text: "Birkas",
+                showText: true,
+              },
+            ],
+          });
+        </script>
+      </div>
 
-    
+      <div class="vzd-content-holder">
+        <h2>Birkas</h2>
+        <div class="bd-example">
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-primary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-secondary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-tertiary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+          <span
+            class="feature k-badge k-badge-solid k-badge-solid-info k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Feature request</span
+          >
+          <span
+            class="bug k-badge k-badge-solid k-badge-solid-error k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Bug</span
+          >
+          <span
+            class="approved k-badge k-badge-solid k-badge-solid-success k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Approved</span
+          >
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-warning k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+        </div>
+
+        <div class="bd-example">
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-primary k-badge-sm k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-primary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+
+          <span
+            class="enhancement k-badge k-badge-solid k-badge-solid-primary k-badge-lg k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+        </div>
+
+        <div class="bd-example">
+          <span
+            class="enhancement k-badge k-badge-outline k-badge-outline-primary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+          <span
+            class="enhancement k-badge k-badge-outline k-badge-outline-secondary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+          <span
+            class="enhancement k-badge k-badge-outline k-badge-outline-tertiary k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+          <span
+            class="feature k-badge k-badge-outline k-badge-outline-info k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Feature request</span
+          >
+          <span
+            class="bug k-badge k-badge-outline k-badge-outline-error k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Bug</span
+          >
+          <span
+            class="approved k-badge k-badge-outline k-badge-outline-success k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Approved</span
+          >
+          <span
+            class="enhancement k-badge k-badge-outline k-badge-outline-warning k-badge-md k-rounded-full k-px-2"
+            data-role="badge"
+            >Enhancement</span
+          >
+        </div>
+
+        <div class="bd-example">
+          <ul class="k-listgroup">
+            <li class="k-listgroup-item">
+              <a href="#" class="k-link"
+                >Inbox
+                <span
+                  id="badge-inbox"
+                  data-role="badge"
+                  class="k-badge k-badge-solid k-badge-solid-info k-badge-md k-rounded-md k-badge-inline k-justify-self-end"
+                  >99+</span
+                ></a
+              >
+            </li>
+            <li class="k-listgroup-item">
+              <a href="#" class="k-link"
+                >Sent Items
+                <span
+                  id="badge-sent"
+                  data-role="badge"
+                  class="k-badge k-badge-solid k-badge-solid-success k-badge-md k-rounded-md k-badge-inline"
+                  >15 items</span
+                ></a
+              >
+            </li>
+            <li class="k-listgroup-item">
+              <a href="#" class="k-link"
+                >Missed conversations
+                <span
+                  id="badge-missed"
+                  data-role="badge"
+                  class="k-badge k-badge-solid k-badge-solid-warning k-badge-md k-rounded-md k-badge-inline"
+                  >a lot</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="bd-example">
+          <h4>Overlay badges</h4>
+          <div>
+            <button
+              id="overlayDot"
+              data-role="button"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+            >
+              <span class="k-button-text">Overlay dot</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-success k-badge-md k-rounded-md k-badge-dot k-badge-edge k-top-end"
+              ></span>
+            </button>
+            <button
+              id="overlayPill"
+              data-role="button"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+            >
+              <span class="k-button-text">Overlay pill</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-error k-badge-md k-rounded-md k-badge-pill k-badge-edge k-top-end"
+                >99+</span
+              >
+            </button>
+            <button
+              id="overlayRectangle"
+              data-role="button"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+            >
+              <span class="k-button-text">overlay rectangle</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-info k-badge-md k-rounded-md k-badge-rectangle k-badge-edge k-top-end"
+                >success</span
+              >
+            </button>
+          </div>
+
+          <hr class="k-hr" />
+
+          <h4>Inline badges</h4>
+          <div>
+            <button
+              id="inlineDot"
+              data-role="button"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+            >
+              <span class="k-button-text">Inline dot</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-success k-badge-md k-rounded-md k-badge-dot k-badge-inline"
+              ></span>
+            </button>
+            <button
+              id="inlinePill"
+              data-role="button"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+            >
+              <span class="k-button-text">Inline pill</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-error k-badge-md k-rounded-md k-badge-pill k-badge-inline"
+                >99+</span
+              >
+            </button>
+            <button
+              id="inlineRectangle"
+              data-role="button"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+            >
+              <span class="k-button-text">Inline rectangle</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-info k-badge-md k-rounded-md k-badge-rectangle k-badge-inline"
+                >success</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="bd-example">
+          <ul
+            data-role="buttongroup"
+            data-index="0"
+            class="k-widget k-button-group"
+            role="group"
+          >
+            <li
+              data-badge="3"
+              data-role="togglebutton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container k-toggle-button k-selected k-button-rectangle"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+              aria-pressed="true"
+            >
+              <span class="k-button-text">One</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-secondary k-badge-md k-rounded-md k-badge-edge k-top-end"
+                >3</span
+              >
+            </li>
+            <li
+              data-role="togglebutton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-toggle-button"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <span class="k-button-text">Two</span>
+            </li>
+            <li
+              data-badge="5"
+              data-role="togglebutton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base k-badge-container k-toggle-button k-button-rectangle"
+              type="button"
+              role="button"
+              aria-disabled="false"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <span class="k-button-text">Three</span
+              ><span
+                data-role="badge"
+                class="k-badge k-badge-solid k-badge-solid-secondary k-badge-md k-rounded-md k-badge-edge k-top-end"
+                >5</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

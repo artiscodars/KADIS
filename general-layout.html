@@ -38,7 +38,6 @@
     <!-- here are all app f-ions and reusable elements -->
     <script src="js/app-setup.js"></script>
 
-    
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-general">
@@ -53,10 +52,40 @@
     <div class="vzd-container">
       <div class="vzd-header">
         <h1>Vispārīgi</h1>
-        <h2>Izkārtojums</h2>
+      </div>
+      <div class="vzd-breadcrumb">
+        <nav id="breadcrumb"></nav>
+        <script>
+          $("#breadcrumb").kendoBreadcrumb({
+            navigational: true,
+            items: [
+              {
+                type: "rootitem",
+                href: "index.html",
+                text: "Sākums",
+                showText: false,
+                icon: "home",
+                showIcon: true,
+              },
+              {
+                type: "item",
+                href: "general-index.html",
+                text: "Vispārīgi",
+                showText: true,
+              },
+              {
+                type: "item",
+                //href: "/index",
+                text: "Izkārtojums",
+                showText: true,
+              },
+            ],
+          });
+        </script>
       </div>
 
       <div class="vzd-content-holder">
+        <h2>Izkārtojums</h2>
         <div class="k-card">
           <div class="k-card-body">
             <p>

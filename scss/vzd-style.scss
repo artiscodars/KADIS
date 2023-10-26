@@ -2,18 +2,18 @@
 @import "../icons/css/fontello.css";
 @import "../node_modules/@progress/kendo-theme-default/dist/all.scss";
 @import "../node_modules/@progress/kendo-theme-utils/dist/all.scss";
-@import "../node_modules/@progress/kendo-font-icons/scss/all.scss"; 
+@import "../node_modules/@progress/kendo-font-icons/scss/all.scss";
 @import "vzd-kendo-adjustments.scss";
 
 @import "vzd-ds-styles.scss"; // Necessary for design system styles
 
 html {
   height: 100%;
-  font-family: $kendo-font-family-sans-serif;	
+  font-family: $kendo-font-family-sans-serif;
 }
 
 a {
-  color:$kendo-color-info;
+  color: $kendo-color-info;
 }
 .vzd-body {
   background: $kendo-color-light;
@@ -77,7 +77,7 @@ a {
 
       &::before {
         font-family: "WebComponentsIcons";
-        font-size: 24px;
+        font-size: 20px;
         margin-right: 5px;
         color: $kendo-color-primary;
       }
@@ -136,7 +136,7 @@ a {
     position: absolute;
     right: 0px;
     margin: 0 !important;
-    color:$kendo-color-primary;
+    color: $kendo-color-primary;
   }
 }
 
@@ -147,32 +147,78 @@ a {
 }
 
 .vzd-header {
-  padding: 20px 20px 0px 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid $kendo-component-border;
+  background-color: $kendo-color-light;
 
   h1 {
     margin: 0;
-    margin-bottom: 20px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    
-  }
-
-h2 {
-    margin: 0;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    
+    &::before {
+      margin-right: 10px;
+      font-family: "WebComponentsIcons";
+      font-size: 24px;
+      color: $kendo-color-primary;
+      font-weight: normal;
+    }
   }
 }
 
+.vzd-general {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e666";
+      }
+    }
+  }
+}
 
+.vzd-components {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e918";
+      }
+    }
+  }
+}
+
+.vzd-user-profile {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e7fd";
+      }
+    }
+  }
+}
+
+.vzd-settings {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e8b8";
+        font-family: "WebComponentsIcons";
+        font-size: 24px;
+        margin-right: 5px;
+        color: $kendo-color-primary;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.vzd-breadcrumb {
+  padding: 5px 15px;
+  border-bottom: 1px solid $kendo-component-border;
+  background-color: $kendo-color-light;
+}
 
 .vzd-content-holder {
-  padding:20px;
-
-
+  padding: 20px;
 }
 
 .vzd-user {
@@ -184,15 +230,14 @@ h2 {
   align-items: center;
   width: 100%;
   &::after {
-    content: "\e5df";
+    content: "\e005";
     display: block;
     margin-left: 0px;
     font-family: "WebComponentsIcons";
-    font-size: 24px;
+    font-size: 20px;
     margin-right: 5px;
     color: $kendo-color-primary;
     font-weight: normal;
-  
   }
 }
 
@@ -203,8 +248,6 @@ h2 {
     }
   }
 }
-
-
 
 .vzd-user-abr {
   width: 30px;
@@ -318,67 +361,6 @@ h2 {
         &::before {
           content: "\e13a";
         }
-      }
-    }
-  }
-}
-
-
-.vzd-general {
-  .vzd-header {
-    h1 {
-      &::before {
-        content: "\e666";
-        font-family: "WebComponentsIcons";
-        font-size: 24px;
-        margin-right: 5px;
-        color: $kendo-color-primary;
-        font-weight: normal;
-      }
-    }
-  }
-}
-
-.vzd-components {
-  .vzd-header {
-    h1 {
-      &::before {
-        content: "\e918";
-        font-family: "WebComponentsIcons";
-        font-size: 24px;
-        margin-right: 5px;
-        color: $kendo-color-primary;
-        font-weight: normal;
-      }
-    }
-  }
-}
-
-.vzd-user-profile {
-  .vzd-header {
-    h1 {
-      &::before {
-        content: "\e7fd";
-        font-family: "WebComponentsIcons";
-        font-size: 24px;
-        margin-right: 5px;
-        color: $kendo-color-primary;
-        font-weight: normal;
-      }
-    }
-  }
-}
-
-.vzd-settings {
-  .vzd-header {
-    h1 {
-      &::before {
-        content: "\e8b8";
-        font-family: "WebComponentsIcons";
-        font-size: 24px;
-        margin-right: 5px;
-        color: $kendo-color-primary;
-        font-weight: normal;
       }
     }
   }

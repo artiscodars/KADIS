@@ -78182,6 +78182,21 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   margin-bottom: 15px;
 }
 
+.k-listgroup .k-link {
+  justify-content: space-between;
+}
+.k-listgroup .k-link:hover {
+  background-color: #555;
+  color: white;
+}
+
+.k-breadcrumb {
+  background: transparent;
+}
+.k-breadcrumb .k-breadcrumb-last-item a {
+  color: #2d2926;
+}
+
 .k-popover-callout.k-callout-s {
   left: 12%;
 }
@@ -78317,7 +78332,7 @@ a {
 }
 .vzd-menu > li > a::before {
   font-family: "WebComponentsIcons";
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 5px;
   color: #840b55;
 }
@@ -78360,20 +78375,49 @@ a {
 }
 
 .vzd-header {
-  padding: 20px 20px 0px 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #bcbcbc;
+  background-color: #faf9f9;
 }
 .vzd-header h1 {
   margin: 0;
-  margin-bottom: 20px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
 }
-.vzd-header h2 {
-  margin: 0;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
+.vzd-header h1::before {
+  margin-right: 10px;
+  font-family: "WebComponentsIcons";
+  font-size: 24px;
+  color: #840b55;
+  font-weight: normal;
+}
+
+.vzd-general .vzd-header h1::before {
+  content: "\e666";
+}
+
+.vzd-components .vzd-header h1::before {
+  content: "\e918";
+}
+
+.vzd-user-profile .vzd-header h1::before {
+  content: "\e7fd";
+}
+
+.vzd-settings .vzd-header h1::before {
+  content: "\e8b8";
+  font-family: "WebComponentsIcons";
+  font-size: 24px;
+  margin-right: 5px;
+  color: #840b55;
+  font-weight: normal;
+}
+
+.vzd-breadcrumb {
+  padding: 5px 15px;
+  border-bottom: 1px solid #bcbcbc;
+  background-color: #faf9f9;
 }
 
 .vzd-content-holder {
@@ -78390,11 +78434,11 @@ a {
   width: 100%;
 }
 .vzd-user::after {
-  content: "\e5df";
+  content: "\e005";
   display: block;
   margin-left: 0px;
   font-family: "WebComponentsIcons";
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 5px;
   color: #840b55;
   font-weight: normal;
@@ -78495,42 +78539,6 @@ a {
 }
 #user-menu li.user-settings a::before {
   content: "\e13a";
-}
-
-.vzd-general .vzd-header h1::before {
-  content: "\e666";
-  font-family: "WebComponentsIcons";
-  font-size: 24px;
-  margin-right: 5px;
-  color: #840b55;
-  font-weight: normal;
-}
-
-.vzd-components .vzd-header h1::before {
-  content: "\e918";
-  font-family: "WebComponentsIcons";
-  font-size: 24px;
-  margin-right: 5px;
-  color: #840b55;
-  font-weight: normal;
-}
-
-.vzd-user-profile .vzd-header h1::before {
-  content: "\e7fd";
-  font-family: "WebComponentsIcons";
-  font-size: 24px;
-  margin-right: 5px;
-  color: #840b55;
-  font-weight: normal;
-}
-
-.vzd-settings .vzd-header h1::before {
-  content: "\e8b8";
-  font-family: "WebComponentsIcons";
-  font-size: 24px;
-  margin-right: 5px;
-  color: #840b55;
-  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
