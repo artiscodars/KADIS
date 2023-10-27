@@ -12,5 +12,8 @@
       }
     ]
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettyxml.settings.positionAllAttributesOnFirstLine": true,
+  "prettyxml.settings.formatOnSave": true,
+  "editor.formatOnSave": true
 }

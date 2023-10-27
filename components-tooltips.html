@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -86,7 +86,34 @@
 
       <div class="vzd-content-holder">
         <h2>Padomu rīki</h2>
-        ...
+        
+        
+
+
+        <ul id="container">
+          <li><span title="Te kaut kāds 1. paskaidrojums">Viens</span></li>
+          <li><span title="Te kaut kāds 2. paskaidrojums">Divi</span></li>
+          <li><span title="Te kaut kāds 3. paskaidrojums">Trīs</span></li>
+    </ul>
+    
+    <script>
+        $("#container").kendoTooltip({
+            filter:"span",
+            width: 120,
+            animation: {
+                        	open: {
+                        		effects: "zoom",
+                        		duration: 150
+                        	}
+                        },
+           
+            position:"top"
+        }).data("kendoTooltip");
+    </script>
+
+
+
+
       </div>
     </div>
   </body>

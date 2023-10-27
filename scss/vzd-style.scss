@@ -27,7 +27,7 @@ a {
   bottom: 0;
   top: 0;
   width: 220px;
-  z-index: 1;
+  z-index: 3;
 }
 .vzd-logo {
   margin: auto;
@@ -73,6 +73,7 @@ a {
       &:hover {
         background-color: $kendo-color-grey;
         color: $kendo-body-text;
+        opacity: 0.7;
       }
 
       &::before {
@@ -83,9 +84,18 @@ a {
       }
     }
 
+    &.active {
+      > a {
+        background-color: $kendo-color-grey;
+        color: $kendo-body-text;
+      }
+    }
+
     &.k-state-border-right {
       > a {
         background-color: $kendo-color-grey;
+        color: $kendo-body-text;
+        opacity: 0.7;
       }
     }
 
@@ -112,6 +122,60 @@ a {
         }
       }
     }
+
+    &.examples {
+      > a {
+        &::before {
+          content: "\e63b";
+        }
+      }
+    }
+
+    &.dashboard {
+      > a {
+        &::before {
+        font-family: 'fontello';
+        content: "\e801";
+        }
+      }
+    }
+
+    &.my-tasks {
+      > a {
+        &::before {
+        font-family: 'fontello';
+        content: "\e803";
+        }
+      }
+    }
+
+    &.orders {
+      > a {
+        &::before {
+        font-family: 'fontello';
+        content: "\e802";
+        }
+      }
+    }
+
+    &.land-objects {
+      > a {
+        &::before {
+        font-family: 'fontello';
+        content: "\e804";
+        }
+      }
+    }
+
+    &.admin {
+      > a {
+        &::before {
+        font-family: 'fontello';
+        content: "\e800";
+        }
+      }
+    }
+    
 
     .submenu {
       width: 200px;
@@ -166,6 +230,18 @@ a {
   }
 }
 
+
+.vzd-land-objects {
+  .vzd-header {
+    h1 {
+      &::before {
+        font-family: 'fontello';
+        content: "\e804";
+      }
+    }
+  }
+}
+
 .vzd-general {
   .vzd-header {
     h1 {
@@ -181,6 +257,16 @@ a {
     h1 {
       &::before {
         content: "\e918";
+      }
+    }
+  }
+}
+
+.vzd-examples {
+  .vzd-header {
+    h1 {
+      &::before {
+        content: "\e63b";
       }
     }
   }
@@ -364,4 +450,7 @@ a {
       }
     }
   }
+}
+.vzd-popover.k-popover-callout.k-callout-s {
+  left: 12%;
 }

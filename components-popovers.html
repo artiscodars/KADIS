@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -76,7 +76,7 @@
               {
                 type: "item",
                 //href: "/index",
-                text: "Izlecošie paziņojumi",
+                text: "Info lodziņi",
                 showText: true,
               },
             ],
@@ -85,8 +85,108 @@
       </div>
 
       <div class="vzd-content-holder">
-        <h2>Izlecošie paziņojumi</h2>
-        ...
+        <h2>Info lodziņi</h2>
+
+        <p>
+           
+          Info lodziņi tiek izmantoti, lai informētu lietotāju par papildus iespējām vai darbībām, kas saistītas ar konkrētu elementu. 
+          
+        </p>
+        <p>
+          Tos neizmanto, ja ir jāparāda ļoti daudz informācijas, jo tad ir labāk izmantot modālo logu.
+        </p>
+
+        <h3>JS piemērs</h3>
+
+        <div class="bd-example">
+          
+          <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md" id="button">Atvērt</button>
+        
+          <script>
+            $(document).ready(function () {
+              $("#button").kendoPopover({
+               //filter: "strong",
+  
+                width: "200px",
+                actionsLayout: "end",
+                actions: [
+                  {
+                    text: "Iziet",
+                  },
+                ],
+                header: `
+                    <div
+                class="k-d-flex k-justify-content-end k-gap-2"
+              >
+                <div class="k-font-bold">LV</div>
+                <div class="">EN</div>
+              </div>
+                    `,
+                body: `
+        
+                <ul id="user-menu">
+                  <li class="user-profile k-text-uppercase">
+                    <a href="user-profile.html"
+                      >
+                      Mans profils</a
+                    >
+                  </li>
+                  <li class="user-settings k-text-uppercase">
+                    <a href="settings.html"
+                      >
+                      Iestatījumi</a
+                    >
+                  </li>
+                </ul>
+              
+        `,
+                position: "top",
+              });
+            });
+          </script>
+
+<piemers/>
+
+<script src="https://gist.github.com/artiscodars/013eca6e2bcb7ec97dcf358953d5c6a5.js"></script>
+
+        
+        </div>
+
+      <h3>HTML piemērs</h3>
+        <div class="bd-example">
+       
+
+        <div class="k-popover k-z-0 k-pos-relative" style="width: 217px">
+          <div class="k-popover-callout k-callout-s"></div>
+          <div class="k-popover-inner">
+            <div class="k-popover-header">Nosaukums</div>
+            <div class="k-popover-body">
+              Te saturs
+            </div>
+            <div
+              class="k-actions k-actions-start k-actions-horizontal k-popover-actions"
+            >
+            <button
+                class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md"
+              >
+                <span class="k-button-text">Aiziet</span>
+              </button>
+              <button
+                class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md"
+              >
+                <span class="k-button-text">Atcelt</span></button
+              >
+            </div>
+          </div>
+        </div>
+
+        <piemers/>
+
+        <script src="https://gist.github.com/artiscodars/ba960d2e939c6bea973f9d5c5185efd8.js"></script>
+
+
+
+
       </div>
     </div>
   </body>

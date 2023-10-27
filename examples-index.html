@@ -40,7 +40,7 @@
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
-  <body class="vzd-body vzd-components">
+  <body class="vzd-body vzd-examples">
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -51,9 +51,8 @@
 
     <div class="vzd-container">
       <div class="vzd-header">
-        <h1>Komponentes</h1>
+        <h1>Piemēri</h1>
       </div>
-      
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
         <script>
@@ -70,14 +69,8 @@
               },
               {
                 type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
                 //href: "/index",
-                text: "Navigācijas ceļš",
+                text: "Piemēri",
                 showText: true,
               },
             ],
@@ -86,40 +79,25 @@
       </div>
 
       <div class="vzd-content-holder">
-        <h2>Navigācijas ceļš</h2>
-
-        <div class="bd-example">
-          <nav id="breadcrumb_demo"></nav>
-          <script>
-            $("#breadcrumb_demo").kendoBreadcrumb({
-              navigational: true,
-              items: [
-                {
-                  type: "rootitem",
-                  href: "index.html",
-                  text: "Sākums",
-                  showText: false,
-                  icon: "home",
-                  showIcon: true,
-                },
-                {
-                  type: "item",
-                  href: "components-index.html",
-                  text: "Komponentes",
-                  showText: true,
-                },
-                {
-                  type: "item",
-                  //href: "/index",
-                  text: "Navigācijas ceļš",
-                  showText: true,
-                },
-              ],
-            });
-
-            // kendo.ui.icon($(".refresh"), { icon: "arrow-rotate-cw" });
-          </script>
+        <div class="k-card">
+          <div class="k-card-body">
+            Šeit ir izkārtojuma piemēri dažādām lapām.
+          </div>
         </div>
+
+        <div class="k-columns-4 k-gap-2 k-w-full k-h-full">
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Zemes vienība</h3>
+                <a href="examples-layout.html" class="k-text-white" target="_blank">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
       </div>
     </div>
   </body>

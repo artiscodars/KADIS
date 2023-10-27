@@ -31755,15 +31755,15 @@ select.k-picker-lg {
   background-color: #ffffff;
 }
 .k-input-solid:hover, .k-input-solid.k-hover {
-  border-color: rgba(188, 188, 188, 0.16);
+  border-color: #666666;
 }
 .k-input-solid:focus, .k-input-solid.k-focus {
-  border-color: rgba(188, 188, 188, 0.16);
-  box-shadow: 0 0 0 2px rgba(188, 188, 188, 0.08);
+  border-color: #666666;
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.08);
 }
 .k-input-solid:focus-within {
-  border-color: rgba(188, 188, 188, 0.16);
-  box-shadow: 0 0 0 2px rgba(188, 188, 188, 0.08);
+  border-color: #666666;
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.08);
 }
 .k-input-solid.k-invalid, .k-input-solid.ng-invalid.ng-touched, .k-input-solid.ng-invalid.ng-dirty {
   border-color: #e4002b;
@@ -31809,10 +31809,10 @@ select.k-picker-lg {
   border-color: rgba(66, 66, 66, 0.8);
 }
 .k-input-outline:focus, .k-input-outline.k-focus {
-  box-shadow: 0 0 0 2px rgba(188, 188, 188, 0.08);
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.08);
 }
 .k-input-outline:focus-within {
-  box-shadow: 0 0 0 2px rgba(188, 188, 188, 0.08);
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.08);
 }
 .k-input-outline.k-invalid, .k-input-outline.ng-invalid.ng-touched, .k-input-outline.ng-invalid.ng-dirty {
   border-color: #e4002b;
@@ -31846,13 +31846,13 @@ select.k-picker-lg {
   color: #2d2926;
 }
 .k-input-flat:hover, .k-input-flat.k-hover {
-  border-color: rgba(188, 188, 188, 0.16);
+  border-color: #666666;
 }
 .k-input-flat:focus, .k-input-flat.k-focus {
-  box-shadow: 0 0 0 2px rgba(188, 188, 188, 0.08);
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.08);
 }
 .k-input-flat:focus-within {
-  box-shadow: 0 0 0 2px rgba(188, 188, 188, 0.08);
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.08);
 }
 .k-input-flat.k-invalid, .k-input-flat.ng-invalid.ng-touched, .k-input-flat.ng-invalid.ng-dirty {
   border-color: #e4002b;
@@ -78197,10 +78197,6 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   color: #2d2926;
 }
 
-.k-popover-callout.k-callout-s {
-  left: 12%;
-}
-
 .k-bg-grey {
   background-color: #d9d9d9;
 }
@@ -78258,6 +78254,18 @@ h6, .h6 {
   border: 1px solid #bcbcbc;
 }
 
+piemers {
+  margin-top: 30px;
+  display: block;
+}
+piemers::before {
+  content: "Koda piemērs:";
+  display: block;
+  color: #424242;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
 html {
   height: 100%;
   font-family: "RobustaTLPro-Regular";
@@ -78280,7 +78288,7 @@ a {
   bottom: 0;
   top: 0;
   width: 220px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .vzd-logo {
@@ -78329,6 +78337,7 @@ a {
 .vzd-menu > li > a:hover {
   background-color: #d9d9d9;
   color: #2d2926;
+  opacity: 0.7;
 }
 .vzd-menu > li > a::before {
   font-family: "WebComponentsIcons";
@@ -78336,8 +78345,14 @@ a {
   margin-right: 5px;
   color: #840b55;
 }
+.vzd-menu > li.active > a {
+  background-color: #d9d9d9;
+  color: #2d2926;
+}
 .vzd-menu > li.k-state-border-right > a {
   background-color: #d9d9d9;
+  color: #2d2926;
+  opacity: 0.7;
 }
 .vzd-menu > li.home > a::before {
   content: "\e034";
@@ -78347,6 +78362,29 @@ a {
 }
 .vzd-menu > li.components > a::before {
   content: "\e918";
+}
+.vzd-menu > li.examples > a::before {
+  content: "\e63b";
+}
+.vzd-menu > li.dashboard > a::before {
+  font-family: "fontello";
+  content: "\e801";
+}
+.vzd-menu > li.my-tasks > a::before {
+  font-family: "fontello";
+  content: "\e803";
+}
+.vzd-menu > li.orders > a::before {
+  font-family: "fontello";
+  content: "\e802";
+}
+.vzd-menu > li.land-objects > a::before {
+  font-family: "fontello";
+  content: "\e804";
+}
+.vzd-menu > li.admin > a::before {
+  font-family: "fontello";
+  content: "\e800";
 }
 .vzd-menu > li .submenu {
   width: 200px;
@@ -78393,12 +78431,21 @@ a {
   font-weight: normal;
 }
 
+.vzd-land-objects .vzd-header h1::before {
+  font-family: "fontello";
+  content: "\e804";
+}
+
 .vzd-general .vzd-header h1::before {
   content: "\e666";
 }
 
 .vzd-components .vzd-header h1::before {
   content: "\e918";
+}
+
+.vzd-examples .vzd-header h1::before {
+  content: "\e63b";
 }
 
 .vzd-user-profile .vzd-header h1::before {
@@ -78539,6 +78586,10 @@ a {
 }
 #user-menu li.user-settings a::before {
   content: "\e13a";
+}
+
+.vzd-popover.k-popover-callout.k-callout-s {
+  left: 12%;
 }
 
 /*# sourceMappingURL=style.css.map */

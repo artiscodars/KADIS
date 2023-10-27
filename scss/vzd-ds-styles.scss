@@ -27,3 +27,15 @@
         border:1px solid $kendo-component-border;
     }
 }
+
+piemers {
+    margin-top: 30px;
+    display: block;
+    &::before {
+        content: "Koda piemērs:";
+        display: block;
+        color: $kendo-color-dark;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+}

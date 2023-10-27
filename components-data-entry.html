@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -86,7 +86,53 @@
 
       <div class="vzd-content-holder">
         <h2>Datu ielāde</h2>
-        ...
+
+        <h3>Failu izvēle</h3>
+
+        <div class="bd-example">
+          <input name="files" id="files" type="file" aria-label="files" />
+
+          <button
+            type="submit"
+            class="k-button k-button-solid-success k-button-solid k-button-md k-rounded-md k-mt-2"
+          >
+            Aiziet
+          </button>
+
+          <script>
+            $(document).ready(function () {
+              $("#files").kendoUpload({});
+            });
+          </script>
+          <piemers />
+          <script src="https://gist.github.com/artiscodars/07667cd1d225dfbeeaa6f762307476a0.js"></script>
+        </div>
+
+        <h3>Failu iemešanas laukums</h3>
+
+        <div class="bd-example">
+          <input
+            name="files"
+            id="dropzone_files"
+            type="file"
+            aria-label="files"
+          />
+
+          <script>
+            $(document).ready(function () {
+              $("#dropzone_files").kendoUpload({
+                multiple: true,
+                async: {
+                  saveUrl: "save",
+                  removeUrl: "remove",
+                  autoUpload: false,
+                },
+              });
+            });
+          </script>
+          <piemers />
+          <script src="https://gist.github.com/artiscodars/d468c143fcc2f69d773f7642b9bd9203.js"></script>
+        </div>
       </div>
     </div>
   </body>

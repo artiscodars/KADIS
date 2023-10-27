@@ -100,8 +100,37 @@ function setupApp() {
               </li>
               </ul>
         </li>
+        <li class="examples">
+        <a href="examples-index.html">Piemēri</a>
+        </li>
         </ul>
-    `; // Your menu HTML goes here
+    `; 
+
+
+
+
+    var menuExample = `
+    <a href="index.html"><img src="images/logo.svg" class="vzd-logo" /></a>
+      <div class="vzd-app-title">Kadastra informācijas sistēma</div>
+      <div class="vzd-app-small-title">KADIS</div>
+        <ul id="menu" class="vzd-menu">
+        <li class="dashboard"><a href="#">Darbvirsma</a></li>
+        <li class="my-tasks"><a href="#">Mani uzdevumi</a></li>
+        <li class="orders"><a href="#">Pasūtījumi</a></li>
+        <li class="land-objects active"><a href="#">Zemes vienības</a></li>
+        <li class="admin">
+          <a href="#">Administrēšana</a>
+            <ul class="submenu">
+                <li>
+                  <a href="#">Iestatījumi</a>
+                </li>
+                <li>
+                  <a href="#">Izkārtojums</a>
+                </li>
+            </ul>
+        </li>       
+        </ul>
+    `; 
 
 
   var userHtml = `
@@ -109,13 +138,14 @@ function setupApp() {
         <div class="vzd-user-abr">JB</div>
         <div class="vzd-user-name">Jānis Bērziņš</div>
       </div> 
-    `; // Your user HTML goes here
+    `; 
 
 
 
 
   // containers for inserting the HTML
   $('#menu-container').html(menuHtml);
+  $('#menu-example').html(menuExample);
   $('#user-container').html(userHtml);
 
   // Include any other logic you need, like initializing the menu with Kendo UI
@@ -141,47 +171,37 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".vzd-user").kendoPopover({
-    template: `
-      <div class="k-popover" style="width: 220px">
-          <div class="k-popover-callout k-callout-s"></div>
-          <div class="k-popover-inner">
-            <div
-              class="k-popover-header k-d-flex k-justify-content-end k-gap-2"
+      width: "200px",
+      actionsLayout: "end",
+      actions: [
+        {
+          text: "Iziet",
+          click: function () {
+            console.log("create");
+          },
+        },
+      ],
+      header: `<div
+      class="k-d-flex k-justify-content-end k-gap-2"
+    >
+      <div class="k-font-bold">LV</div>
+      <div class="">EN</div>
+    </div>`,
+      body: `<ul id="user-menu">
+        <li class="user-profile k-text-uppercase">
+          <a href="user-profile.html"
             >
-              <div class="k-font-bold">LV</div>
-              <div class="">EN</div>
-            </div>
-            <div class="k-popover-body">
-              <ul id="user-menu">
-                <li class="user-profile k-text-uppercase">
-                  <a href="user-profile.html"
-                    >
-                    Mans profils</a
-                  >
-                </li>
-                <li class="user-settings k-text-uppercase">
-                  <a href="settings.html"
-                    >
-                    Iestatījumi</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div
-              class="k-actions k-justify-content-end k-actions-horizontal k-popover-actions"
+            Mans profils</a
+          >
+        </li>
+        <li class="user-settings k-text-uppercase">
+          <a href="settings.html"
             >
-              <button
-                class="k-button k-button-sm k-button-solid k-button-solid-primary k-rounded-md"
-              >
-                <span class="k-button-text"> Iziet </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      `,
-    show: function (e) {
-      /* The result can be observed in the DevTools(F12) console of the browser. */
-      console.log(e.sender.popup)
-    }
+            Iestatījumi</a
+          >
+        </li>
+      </ul>`,
+      position: "top",
+    
   });
 });

@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -86,7 +86,85 @@
 
       <div class="vzd-content-holder">
         <h2>Modālie logi</h2>
-        ...
+
+        <div class="bd-example">
+          <div id="dialog"></div>
+          <button
+            id="openButton"
+            class="k-button k-button-solid-primary k-button-md k-button-solid k-rounded-md"
+          >
+            Atvērt modālo logu
+          </button>
+          <script>
+            $(document).ready(function () {
+              $("#dialog").kendoDialog({
+                width: "400px",
+                title: "Modālā loga nosaukums",
+                buttonLayout: "start",
+                visible: false,
+                content: "Te kaut kāds saturs",
+                actions: [
+                  {
+                    text: "Saglabāt",
+                    primary: true,
+                  },
+                  { text: "Atcelt" },
+                ],
+              });
+            });
+
+            $("#openButton").click(function () {
+              var dialog = $("#dialog").data("kendoDialog");
+              dialog.open();
+            });
+          </script>
+
+          <piemers />
+
+          <script src="https://gist.github.com/artiscodars/f93d2d8c6a6f7e6a55f94e45a19c1ff7.js"></script>
+        </div>
+
+        <h3>HTML piemērs</h3>
+
+        <div class="bd-example">
+          <div
+            class="k-dialog k-window k-pos-relative k-z-0"
+            style="width: 350px; height: 215px"
+          >
+            <div class="k-window-titlebar k-dialog-titlebar">
+              <span class="k-window-title k-dialog-title">
+                Modālā loga nosaukums
+              </span>
+              <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                <button
+                  class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button"
+                >
+                  <span class="k-font-icon k-i-close"></span>
+                </button>
+              </div>
+            </div>
+            <div class="k-window-content k-dialog-content">
+              <p>Saturs</p>
+            </div>
+            <div
+              class="k-actions k-ac k-actions-horizontal k-window-actions k-dialog-actions"
+            >
+              <button
+                class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md"
+              >
+                Saglabāt
+              </button>
+              <button
+                class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md"
+              >
+                Atcelt
+              </button>
+            </div>
+          </div>
+
+          <piemers />
+          <script src="https://gist.github.com/artiscodars/4b3600f219e9b48798e458992d289554.js"></script>
+        </div>
       </div>
     </div>
   </body>
