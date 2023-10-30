@@ -10,6 +10,7 @@
 html {
   height: 100%;
   font-family: $kendo-font-family-sans-serif;
+  font-size: $kendo-font-size;
 }
 
 a {
@@ -68,7 +69,8 @@ a {
       color: $kendo-body-text;
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: $kendo-font-size;
 
       &:hover {
         background-color: $kendo-color-grey;
@@ -78,7 +80,7 @@ a {
 
       &::before {
         font-family: "WebComponentsIcons";
-        font-size: 20px;
+        font-size: $kendo-font-size-lg;
         margin-right: 5px;
         color: $kendo-color-primary;
       }
@@ -181,6 +183,7 @@ a {
       height: unset;
       a {
         height: unset;
+        font-weight: 600;
       }
     }
   }
@@ -242,6 +245,7 @@ a {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    font-weight: 500;
     &::before {
       margin-right: 10px;
       font-family: "WebComponentsIcons";

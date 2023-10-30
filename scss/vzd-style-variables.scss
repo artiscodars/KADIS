@@ -1,13 +1,16 @@
-$kendo-color-primary: #840b55;
-$kendo-color-primary-darker: #5f093e;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+$kendo-color-primary: #990066;
+$kendo-color-primary-darker: #660033;
 $kendo-color-secondary: #666666;
-$kendo-color-tertiary: #227b8b;
-$kendo-color-info: #0057b8;
-$kendo-color-success: #4a773c;
-$kendo-color-warning: #e57200;
-$kendo-color-error: #e4002b;
+$kendo-color-tertiary: #009999;
+$kendo-color-info: #0066cc;
+$kendo-color-success: #336633;
+$kendo-color-warning: #cc6600;
+$kendo-color-error: #cc0033;
 $kendo-color-light: #faf9f9;
-$kendo-body-text: #2d2926;
+$kendo-color-dark: #333333;
+$kendo-body-text: #333333;
 $kendo-base-bg: #faf9f9;
 $kendo-component-border: #bcbcbc;
 $kendo-input-hover-border: $kendo-color-secondary;
@@ -16,11 +19,18 @@ $kendo-input-hover-border: $kendo-color-secondary;
 
 $kendo-color-grey: #d9d9d9;
 
-$kendo-font-size-xs: 0.8rem !default;
-$kendo-font-size-sm: 0.7rem !default;
-$kendo-font-size: 0.8rem !default;
+$kendo-font-size-xs: 0.7rem !default;
+$kendo-font-size-sm: 0.8rem !default;
+$kendo-font-size: 0.9rem !default;
 $kendo-font-size-md: $kendo-font-size !default;
-$kendo-font-size-lg: 1rem !default;
-$kendo-font-size-xl: 1.1rem !default;
+$kendo-font-size-lg: 1.1rem !default;
+$kendo-font-size-xl: 1.2rem !default;
 
-$kendo-font-family-sans-serif: "Verdana", sans-serif !default;
+$kendo-font-family-sans-serif: "Open Sans", sans-serif; //"Verdana", sans-serif !default;
+
+$kendo-input-padding-x: 10px !default;
+$kendo-input-padding-y: 7px !default;
+$kendo-button-padding-x: 15px !default;
+$kendo-button-padding-y: 7px !default;
+
+$kendo-line-height: 1.7;
