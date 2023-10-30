@@ -87,9 +87,11 @@
 
       <div class="vzd-content-holder">
 <h2>Izvēlnes</h2>
+
+<h4>Horizontālā</h4>
         <div class="bd-example">
          
-          <h4>Horizontal</h4>
+          
           <ul id="horizontalMenu" class="vzd-entry-menu">
               <li>
                 Pamatdati
@@ -118,50 +120,109 @@
               </li>
               <li>Saistītie objekti</li>
           </ul>
+
+          </div>
   
-          <h4 style="padding-top:2em; margin-top:30px">Vertical</h4>
+          <h4>Vertikālā</h4>
+
+          <div class="bd-example">
   
-          <ul id="verticalMenu" style="width:150px; height:150px;">
-              <li>
-                  Mens
-                  <ul>
-                      <li>Jackets and Coats</li>
-                      <li>Jeans</li>
-                      <li>Knitwear</li>
-                      <li>Shirts</li>
-                      <li>Belts</li>
-                      <li>Socks</li>
-                      <li>Fan Zone</li>
+          <ul id="verticalMenu" class="vzd-menu" style="width: 200px;">
+            <li class="home"><a href="index.html">Ievads</a></li>
+            <li class="general">
+              <a href="general-index.html">Vispārīgi</a>
+                <ul class="submenu">
+                    <li>
+                      <a href="general-index.html">Ievads</a>
+                    </li>
+                    <li>
+                      <a href="general-layout.html">Izkārtojums</a>
+                    </li>
+                    <li>
+                      <a href="general-colors.html">Krāsas</a>
+                    </li>
+                    <li>
+                      <a href="general-typography.html">Tipogrāfija</a>
+                    </li>
+                    <li>
+                      <a href="general-icons.html">Ikonas</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="components">
+              <a href="components-index.html">Komponetes</a>
+                <ul class="submenu">
+                  <li>
+                  <a href="components-index.html">
+                  Par komponentēm </a>
+                  </li>
+                  <li>
+                  <a href="components-accordions.html">
+                  Akordioni </a>
+                  </li>
+                  <li>
+                  <a href="components-badges.html">
+                  Birkas </a>
+                  </li>
+                  <li>
+                  <a href="components-data-entry.html">
+                  Datu ielāde </a>
+                  </li>
+                  <li>
+                  <a href="components-forms.html">
+                  Formas </a>
+                  </li>
+                  <li>
+                  <a href="components-modals.html">
+                  Modālie logi </a>
+                  </li>
+                  <li>
+                  <a href="components-popovers.html">
+                  Info lodziņi </a>
+                  </li>
+                  <li>
+                  <a href="components-menu.html">
+                  Izvēlne </a>
+                  </li>
+                  
+                  <li>
+                  <a href="components-tabs.html">
+                  Mapes </a>
+                  </li>
+                  <li>
+                  <a href="components-breadcrumb.html">
+                  Navigācijas ceļš </a>
+                  </li>
+                  <li>
+                  <a href="components-alerts.html">
+                  Paziņojumi </a>
+                  </li>
+                  <li>
+                  <a href="components-tooltips.html">
+                  Padomu rīki </a>
+                  </li>
+                  <li>
+                  <a href="components-buttons.html">
+                  Pogas </a>
+                  </li>
+                  <li>
+                  <a href="components-progress-indicators.html">
+                  Progresa indikātori </a>
+                  </li>
+                  <li>
+                  <a href="components-lists.html">
+                  Saraksti </a>
+                  </li>
+                  <li>
+                  <a href="components-tables.html">
+                  Tabulas </a>
+                  </li>
                   </ul>
-              </li>
-              <li>
-                  Ladies
-                  <ul>
-                      <li>Jackets and Coats</li>
-                      <li>Jeans</li>
-                      <li>Knitwear</li>
-                      <li>Shirts</li>
-                      <li>Belts</li>
-                      <li>Socks</li>
-                      <li>Fan Zone</li>
-                  </ul>
-              </li>
-              <li>
-                  Kids
-                  <ul>
-                      <li>Jackets and Coats</li>
-                      <li>Jeans</li>
-                      <li>Knitwear</li>
-                      <li>Shirts</li>
-                      <li>Belts</li>
-                      <li>Socks</li>
-                      <li>Fan Zone</li>
-                  </ul>
-              </li>
-              <li>Sports</li>
-              <li>Brands</li>
-              <li>News</li>
-              <li>About us</li>
+            </li>
+            <li class="examples">
+            <a href="examples-index.html">Piemēri</a>
+            </li>
+            
           </ul>
         </div>
 
@@ -172,17 +233,12 @@
               });
       
               $("#verticalMenu").kendoMenu({
-                  scrollable: true,
                   orientation: "vertical"
               });
           });
       </script>
       
-      <style>
-          .k-menu-scroll-wrapper.horizontal li.k-item.k-last {
-              border-right-width: 0;
-          }
-      </style>
+    
         </div>
       </div>
     </div>

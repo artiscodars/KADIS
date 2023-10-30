@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -83,10 +83,79 @@
         </script>
       </div>
 
-      <div class="vzd-content-holder">
-        <h2>Ievads</h2>
-        ...
+      <div class="vzd-entry-header k-p-5 k-bg-light">
+        <div class="k-card k-mb-0">
+          <div class="k-card-body k-bg-white k-color-dark">
+            <div class="k-h-full k-d-flex k-gap-5">
+              <div>
+                <label class="k-font-semibold">Kadastra apzīmējums</label>
+                <div>0900 007 0181</div>
+              </div>
+              <div>
+                <label class="k-font-semibold">Adrese</label>
+                <div>Zemeņu iela 2, Sigulda, Siguldas nov., LV-2150</div>
+              </div>
+              <div class="k-grow"></div>
+              <div class="k-grow k-grow-0">
+                <div class="k-text-end">
+                  <select id="versions">
+                    <option>Aktuālā versija</option>
+                    <option>v3 - 12/08/2023</option>
+                    <option>v2 - 12/07/2023</option>
+                    <option>v1 - 12/06/2023</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <ul id="horizontalMenu" class="vzd-entry-menu">
+        <li>Pamatdati</li>
+        <li>Lietošanas veidi un mērķi</li>
+        <li>Mērniecība</li>
+        <li>Apgrūtinājumi</li>
+        <li>Adreses</li>
+        <li class="active"><a href="#">Atzīmes</a></li>
+        <li>
+          Dokumenti
+          <ul>
+            <li>Objekta dokumenti</li>
+            <li>Nekustamā īpašuma dokumenti</li>
+            <li>DDK</li>
+          </ul>
+        </li>
+
+        <li>Vērtēšana</li>
+        <li>
+          Zemes vienības un daļas
+          <ul>
+            <li>Plānotās ZV</li>
+            <li>ZV daļas</li>
+            <li>Plānotās ZV daļas</li>
+          </ul>
+        </li>
+        <li>
+          Saistītie objekti
+          <ul>
+            <li>Īpašums un īpašnieki</li>
+            <li>Būves</li>
+            <li>Zemes vienības</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="vzd-content-holder">te formas</div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $("#horizontalMenu").kendoMenu({
+          scrollable: true,
+        });
+
+        $("#versions").kendoDropDownList();
+      });
+    </script>
   </body>
 </html>

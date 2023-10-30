@@ -58,10 +58,6 @@ function setupApp() {
               Info lodziņi </a>
               </li>
               <li>
-              <a href="components-toasts.html">
-              Izlecošie paziņojumi </a>
-              </li>
-              <li>
               <a href="components-menu.html">
               Izvēlne </a>
               </li>
@@ -104,12 +100,12 @@ function setupApp() {
         <a href="examples-index.html">Piemēri</a>
         </li>
         </ul>
-    `; 
+    `;
 
 
 
 
-    var menuExample = `
+  var menuExample = `
     <a href="index.html"><img src="images/logo.svg" class="vzd-logo" /></a>
       <div class="vzd-app-title">Kadastra informācijas sistēma</div>
       <div class="vzd-app-small-title">KADIS</div>
@@ -130,7 +126,7 @@ function setupApp() {
             </ul>
         </li>       
         </ul>
-    `; 
+    `;
 
 
   var userHtml = `
@@ -138,7 +134,7 @@ function setupApp() {
         <div class="vzd-user-abr">JB</div>
         <div class="vzd-user-name">Jānis Bērziņš</div>
       </div> 
-    `; 
+    `;
 
 
 
@@ -171,23 +167,23 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".vzd-user").kendoPopover({
-      width: "200px",
-      actionsLayout: "end",
-      actions: [
-        {
-          text: "Iziet",
-          click: function () {
-            console.log("create");
-          },
+    width: "200px",
+    actionsLayout: "end",
+    actions: [
+      {
+        text: "Iziet",
+        click: function () {
+          console.log("create");
         },
-      ],
-      header: `<div
+      },
+    ],
+    header: `<div
       class="k-d-flex k-justify-content-end k-gap-2"
     >
       <div class="k-font-bold">LV</div>
       <div class="">EN</div>
     </div>`,
-      body: `<ul id="user-menu">
+    body: `<ul id="user-menu">
         <li class="user-profile k-text-uppercase">
           <a href="user-profile.html"
             >
@@ -201,7 +197,7 @@ $(document).ready(function () {
           >
         </li>
       </ul>`,
-      position: "top",
-    
+    position: "top",
+
   });
 });
