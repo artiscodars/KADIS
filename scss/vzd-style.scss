@@ -134,8 +134,8 @@ a {
     &.dashboard {
       > a {
         &::before {
-        font-family: 'fontello';
-        content: "\e801";
+          font-family: "fontello";
+          content: "\e801";
         }
       }
     }
@@ -143,8 +143,8 @@ a {
     &.my-tasks {
       > a {
         &::before {
-        font-family: 'fontello';
-        content: "\e803";
+          font-family: "fontello";
+          content: "\e803";
         }
       }
     }
@@ -152,8 +152,8 @@ a {
     &.orders {
       > a {
         &::before {
-        font-family: 'fontello';
-        content: "\e802";
+          font-family: "fontello";
+          content: "\e802";
         }
       }
     }
@@ -161,8 +161,8 @@ a {
     &.land-objects {
       > a {
         &::before {
-        font-family: 'fontello';
-        content: "\e804";
+          font-family: "fontello";
+          content: "\e804";
         }
       }
     }
@@ -170,12 +170,11 @@ a {
     &.admin {
       > a {
         &::before {
-        font-family: 'fontello';
-        content: "\e800";
+          font-family: "fontello";
+          content: "\e800";
         }
       }
     }
-    
 
     .submenu {
       width: 200px;
@@ -201,6 +200,29 @@ a {
     right: 0px;
     margin: 0 !important;
     color: $kendo-color-primary;
+  }
+}
+.k-menu {
+  &.vzd-entry-menu {
+    background: $kendo-color-light;
+    border-bottom: 1px solid $kendo-component-border;
+
+    > li.active {
+      > a {
+        color: $kendo-body-text;
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 4px;
+          bottom: -1px;
+          left: 0;
+          right: 0;
+          background-color: $kendo-color-primary;
+        }
+      }
+    }
   }
 }
 
@@ -230,12 +252,11 @@ a {
   }
 }
 
-
 .vzd-land-objects {
   .vzd-header {
     h1 {
       &::before {
-        font-family: 'fontello';
+        font-family: "fontello";
         content: "\e804";
       }
     }

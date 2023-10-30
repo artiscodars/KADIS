@@ -78406,6 +78406,25 @@ a {
   color: #840b55;
 }
 
+.k-menu.vzd-entry-menu {
+  background: #faf9f9;
+  border-bottom: 1px solid #bcbcbc;
+}
+.k-menu.vzd-entry-menu > li.active > a {
+  color: #2d2926;
+  position: relative;
+}
+.k-menu.vzd-entry-menu > li.active > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background-color: #840b55;
+}
+
 .vzd-container {
   background: #fff;
   min-height: 100%;
