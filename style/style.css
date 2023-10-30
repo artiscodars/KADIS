@@ -78370,6 +78370,7 @@ a {
 .vzd-menu > li > a::before {
   font-family: "WebComponentsIcons";
   font-size: 1.1rem;
+  font-weight: 500;
   margin-right: 5px;
   color: #990066;
 }
