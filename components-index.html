@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,33 +48,182 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Komponentes",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
-        <h2>Ievads</h2>
-        ...
+        <div class="k-card">
+          <div class="k-card-body">
+            <p>
+              Šajā sadaļā ir attēlotas KADIS izmantotās komponentes. Katras
+              komponentes izskats ir universializēts un pielāgots zīmola
+              vadlīniju kopējām prasībām.
+            </p>
+
+            <p>
+              Ir iespējama jaunu komponenšu pievienošana attīstoties projektam
+              un tehnoloģijām, bet radot jaunas komponentes ir vēlams ievērot,
+              lai tās iekļaujas kopējā dizaina ansamblī/kopumā.
+            </p>
+          </div>
+        </div>
+
+        <div class="k-columns-4 k-gap-2 k-w-full k-h-full">
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Akordioni</h3>
+                <a href="components-accordions.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Birkas</h3>
+                <a href="components-badges.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Datu ielāde</h3>
+                <a href="components-data-entry.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Formas</h3>
+                <a href="components-forms.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Modālie logi</h3>
+                <a href="components-modals.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Info lodziņi</h3>
+                <a href="components-popovers.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Izvēlne</h3>
+                <a href="components-menu.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Mapes</h3>
+                <a href="components-tabs.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Navigācijas ceļš</h3>
+                <a href="components-breadcrumb.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Paziņojumi</h3>
+                <a href="components-alerts.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Padomu rīki</h3>
+                <a href="components-tooltips.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Pogas</h3>
+                <a href="components-buttons.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Laika līnija</h3>
+                <a href="components-timeline.html" class="k-text-white"
+                  >Atvērt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="k-card">
+              <div class="k-card-body k-bg-primary k-text-white">
+                <h3 class="k-m-0">Tabulas</h3>
+                <a href="components-tables.html" class="k-text-white">Atvērt</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Komponentes",
+            showText: true,
+          },
+        ],
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

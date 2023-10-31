@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -53,36 +46,9 @@
       <div class="vzd-header">
         <h1>Komponentes</h1>
       </div>
-      
+
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Navigācijas ceļš",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
@@ -90,37 +56,79 @@
 
         <div class="bd-example">
           <nav id="breadcrumb_demo"></nav>
-          <script>
-            $("#breadcrumb_demo").kendoBreadcrumb({
-              navigational: true,
-              items: [
-                {
-                  type: "rootitem",
-                  href: "index.html",
-                  text: "Sākums",
-                  showText: false,
-                  icon: "home",
-                  showIcon: true,
-                },
-                {
-                  type: "item",
-                  href: "components-index.html",
-                  text: "Komponentes",
-                  showText: true,
-                },
-                {
-                  type: "item",
-                  //href: "/index",
-                  text: "Navigācijas ceļš",
-                  showText: true,
-                },
-              ],
-            });
+        </div>
 
-            // kendo.ui.icon($(".refresh"), { icon: "arrow-rotate-cw" });
-          </script>
+        <div class="k-card">
+          <div class="k-card-body">
+            <a
+              href="https://demos.telerik.com/aspnet-core/breadcrumb"
+              target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb_demo").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Navigācijas ceļš",
+            showText: true,
+          },
+        ],
+      });
+
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Navigācijas ceļš",
+            showText: true,
+          },
+        ],
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

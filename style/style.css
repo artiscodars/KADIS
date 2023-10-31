@@ -28985,14 +28985,14 @@ kendo-badge-container {
 }
 
 .k-button-md {
-  padding-block: 7px;
-  padding-inline: 15px;
+  padding-block: 5px;
+  padding-inline: 10px;
   font-size: 0.9rem;
   line-height: 1.7;
 }
 
 .k-button-md.k-icon-button {
-  padding: 7px;
+  padding: 5px;
 }
 .k-button-md.k-icon-button .k-button-icon {
   min-width: calc( 0.9rem * 1.7 );
@@ -30359,7 +30359,7 @@ kendo-badge-container {
 }
 .k-toolbar::before {
   content: "";
-  height: calc( 1.7em + 14px + 2px );
+  height: calc( 1.7em + 10px + 2px );
 }
 .k-toolbar.k-toolbar-resizable {
   flex-wrap: nowrap;
@@ -30454,7 +30454,7 @@ kendo-badge-container {
 }
 
 .k-toolbar-md::before {
-  height: calc( 1.7em + 14px + 2px );
+  height: calc( 1.7em + 10px + 2px );
 }
 
 .k-toolbar-lg::before {
@@ -30930,7 +30930,7 @@ kendo-label > .k-label {
 
 .k-edit-label {
   margin: 0 0 16px 0;
-  padding: calc( 7px + 1px ) 0;
+  padding: calc( 5px + 1px ) 0;
   width: 30%;
   line-height: 1.7;
   text-align: end;
@@ -30946,7 +30946,7 @@ kendo-label > .k-label {
   position: relative;
 }
 .k-edit-field.k-no-editor {
-  padding: calc( 7px + 1px ) 0;
+  padding: calc( 5px + 1px ) 0;
 }
 
 .k-edit-field > .k-widget {
@@ -31223,7 +31223,7 @@ kendo-label > .k-label {
 
 input.k-input,
 textarea.k-textarea {
-  padding-block: 7px;
+  padding-block: 5px;
   padding-inline: 10px;
 }
 input.k-input:disabled, input.k-input[disabled],
@@ -31254,7 +31254,7 @@ textarea.k-textarea {
 }
 
 select.k-picker {
-  padding-block: 7px;
+  padding-block: 5px;
   padding-inline: 10px;
   appearance: auto;
 }
@@ -31272,7 +31272,7 @@ select.k-picker:disabled, select.k-picker[disabled] {
 }
 
 .k-input-inner {
-  padding-block: 7px;
+  padding-block: 5px;
   padding-inline: 10px;
   width: 100%;
   border: 0;
@@ -31340,7 +31340,7 @@ textarea.k-input-inner {
 }
 
 .k-icon-picker .k-input-inner {
-  padding: 7px;
+  padding: 5px;
   justify-content: center;
 }
 
@@ -31454,7 +31454,7 @@ textarea.k-input-inner {
 }
 
 .k-input-button {
-  width: calc( 1.7em + 14px );
+  width: calc( 1.7em + 10px );
   border-width: 0;
   border-inline-start-width: 1px;
   flex: none;
@@ -31475,7 +31475,7 @@ textarea.k-input-inner {
 }
 
 .k-input-spinner {
-  width: calc( 1.7em + 14px );
+  width: calc( 1.7em + 10px );
   flex: none;
   display: flex;
   flex-flow: column nowrap;
@@ -31608,18 +31608,18 @@ select.k-picker-sm {
 }
 .k-input-md .k-input-values,
 .k-picker-md .k-input-values {
-  padding: 3.5px;
-  gap: 3.5px;
+  padding: 2.5px;
+  gap: 2.5px;
 }
 .k-input-md .k-input-values > .k-searchbar,
 .k-input-md .k-input-values > .k-input-inner,
 .k-picker-md .k-input-values > .k-searchbar,
 .k-picker-md .k-input-values > .k-input-inner {
-  margin: -3.5px;
+  margin: -2.5px;
 }
 .k-input-md .k-input-inner,
 .k-picker-md .k-input-inner {
-  padding-block: 7px;
+  padding-block: 5px;
   padding-inline: 10px;
 }
 .k-input-md .k-input-button,
@@ -31628,8 +31628,8 @@ select.k-picker-sm {
 .k-picker-md .k-input-button,
 .k-picker-md .k-spinner-increase,
 .k-picker-md .k-spinner-decrease {
-  padding-block: 7px;
-  padding-inline: 7px;
+  padding-block: 5px;
+  padding-inline: 5px;
 }
 .k-input-md .k-input-icon,
 .k-input-md .k-input-validation-icon,
@@ -31643,24 +31643,24 @@ select.k-picker-sm {
 .k-picker-md .k-clear-value,
 .k-picker-md .k-input-prefix > .k-icon,
 .k-picker-md .k-input-suffix > .k-icon {
-  padding-block: 7px;
-  padding-inline: 7px;
+  padding-block: 5px;
+  padding-inline: 5px;
   box-sizing: content-box;
 }
 .k-input-md.k-icon-picker .k-input-inner,
 .k-picker-md.k-icon-picker .k-input-inner {
   width: calc( 1.7em );
   height: calc( 1.7em );
-  padding: 7px;
+  padding: 5px;
   box-sizing: content-box;
 }
 
 .k-dropdown-operator.k-picker-md .k-input-button {
-  padding: 7px;
+  padding: 5px;
 }
 
 select.k-picker-md {
-  padding-block: 7px;
+  padding-block: 5px;
   padding-inline: 10px;
 }
 
@@ -31902,7 +31902,7 @@ select.k-picker-lg {
   white-space: nowrap;
   text-overflow: ellipsis;
   position: absolute;
-  top: calc( calc( 1.7 * 0.9rem ) + 1px + 7px );
+  top: calc( calc( 1.7 * 0.9rem ) + 1px + 5px );
   left: calc( 10px + 1px );
   overflow: hidden;
   cursor: text;
@@ -31914,7 +31914,7 @@ select.k-picker-lg {
   width: auto;
 }
 .k-floating-label-container.k-empty > .k-label {
-  top: calc( calc( 1.7 * 0.9rem ) + 1px + 7px );
+  top: calc( calc( 1.7 * 0.9rem ) + 1px + 5px );
   left: calc( 10px + 1px );
   transform: scale(1);
   pointer-events: none;
@@ -31954,8 +31954,8 @@ select.k-picker-lg {
 }
 
 .k-split-button .k-split-button-arrow {
-  padding-block: 7px;
-  padding-inline: 7px;
+  padding-block: 5px;
+  padding-inline: 5px;
   width: auto;
   aspect-ratio: auto;
   flex: none;
@@ -31965,8 +31965,8 @@ select.k-picker-lg {
   padding-inline: 2px;
 }
 .k-split-button .k-split-button-arrow.k-button-md {
-  padding-block: 7px;
-  padding-inline: 7px;
+  padding-block: 5px;
+  padding-inline: 5px;
 }
 .k-split-button .k-split-button-arrow.k-button-lg {
   padding-block: 8px;
@@ -31991,10 +31991,10 @@ select.k-picker-lg {
 }
 .k-menu-button > .k-button-arrow,
 .k-dropdown-button > .k-button-arrow {
-  margin-inline-start: -7px;
-  margin-inline-end: -15px;
-  padding-left: 7px;
-  padding-right: 7px;
+  margin-inline-start: -5px;
+  margin-inline-end: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
   flex: none;
   display: inline-flex;
   align-items: center;
@@ -32003,7 +32003,7 @@ select.k-picker-lg {
 .k-menu-button.k-icon-button > .k-button-arrow,
 .k-dropdown-button.k-icon-button > .k-button-arrow {
   margin-inline-start: 0;
-  margin-inline-end: -7px;
+  margin-inline-end: -5px;
 }
 
 .k-listbox {
@@ -33581,8 +33581,8 @@ select.k-picker-lg {
 .k-time-header .k-time-selector-header-title,
 .k-time-selector-header .k-title,
 .k-time-selector-header .k-time-selector-header-title {
-  padding-block: 7px;
-  padding-inline: 15px;
+  padding-block: 5px;
+  padding-inline: 10px;
   font-weight: bold;
   display: inline-block;
 }
@@ -38121,7 +38121,7 @@ kendo-card-footer {
   gap: 14px;
 }
 .k-pager-md .k-pager-numbers-wrap .k-button {
-  min-width: calc( 1.7em + 14px + 2px );
+  min-width: calc( 1.7em + 10px + 2px );
 }
 .k-pager-md .k-pager-numbers-wrap .k-pager-input,
 .k-pager-md .k-pager-numbers-wrap > select.k-dropdown-list,
@@ -39442,8 +39442,8 @@ kendo-card-footer {
 }
 @supports (not (-ms-ime-mode: none)) and (not (overflow: -webkit-marquee)) and (not (-moz-appearance: none)) {
   .k-dock-manager-toolbar .k-toolbar-button {
-    padding-block: 15px;
-    padding-inline: 7px;
+    padding-block: 10px;
+    padding-inline: 5px;
   }
   .k-dock-manager-toolbar .k-toolbar-button .k-button-text {
     writing-mode: vertical-lr;
@@ -40902,7 +40902,7 @@ div.k-grid-norecords {
   padding: 2px;
   width: calc( 1.7em + 4px + 2px );
   height: calc( 1.7em + 4px + 2px );
-  bottom: calc( 4px + calc( 1.7 * 1em )/2 - calc( 1.7em + 14px )/2 );
+  bottom: calc( 4px + calc( 1.7 * 1em )/2 - calc( 1.7em + 10px )/2 );
 }
 .k-grid-sm .k-table-th > .k-cell-inner {
   margin-block: -4px;
@@ -40985,10 +40985,10 @@ div.k-grid-norecords {
 .k-grid-md .k-grid-header .k-grid-filter,
 .k-grid-md .k-grid-header .k-header-column-menu,
 .k-grid-md .k-grid-header .k-grid-header-menu {
-  padding: 7px;
-  width: calc( 1.7em + 14px + 2px );
-  height: calc( 1.7em + 14px + 2px );
-  bottom: calc( 8px + calc( 1.7 * 1em )/2 - calc( 1.7em + 14px )/2 );
+  padding: 5px;
+  width: calc( 1.7em + 10px + 2px );
+  height: calc( 1.7em + 10px + 2px );
+  bottom: calc( 8px + calc( 1.7 * 1em )/2 - calc( 1.7em + 10px )/2 );
 }
 .k-grid-md .k-table-th > .k-cell-inner {
   margin-block: -8px;
@@ -41916,7 +41916,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   display: none;
 }
 .k-spreadsheet-formula-bar .k-spreadsheet-formula-input {
-  padding-block: 7px;
+  padding-block: 5px;
   padding-inline: 10px;
   line-height: 1.7;
   display: inline-block;
@@ -44589,7 +44589,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
 .k-filebrowser .k-breadcrumbs-wrap {
   position: absolute;
   left: 10px;
-  top: 7px;
+  top: 5px;
 }
 .k-filebrowser .k-breadcrumbs-wrap .k-icon {
   position: static;
@@ -45103,9 +45103,9 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   }
   .k-gantt-toolbar .k-gantt-pdf,
 .k-gantt-toolbar .k-gantt-create {
-    padding: 7px;
-    width: calc( 1.7em + 14px + 2px );
-    height: calc( 1.7em + 14px + 2px );
+    padding: 5px;
+    width: calc( 1.7em + 10px + 2px );
+    height: calc( 1.7em + 10px + 2px );
   }
   .k-gantt-toolbar .k-gantt-pdf .k-button-text,
 .k-gantt-toolbar .k-gantt-create .k-button-text {
@@ -47446,8 +47446,8 @@ kendo-scheduler .k-recurrence-editor {
 .k-timeline .k-timeline-flag {
   display: inline-block;
   text-align: center;
-  padding-block: 7px;
-  padding-inline: 15px;
+  padding-block: 5px;
+  padding-inline: 10px;
   border-radius: 4px;
   line-height: 1.7;
   min-width: 80px;
@@ -47909,7 +47909,7 @@ kendo-scheduler .k-recurrence-editor {
 
 .k-pdf-viewer-canvas > .k-search-panel {
   width: max-content;
-  margin-top: calc((calc( 1.7em + 14px + 2px ) + ( 2 * 1px ) + ( 2 * calc( 8px * 2 ) )) * -1);
+  margin-top: calc((calc( 1.7em + 10px + 2px ) + ( 2 * 1px ) + ( 2 * calc( 8px * 2 ) )) * -1);
   padding-block: calc( 8px * 2 );
   padding-inline: 8px;
   border-width: 1px;
@@ -78183,6 +78183,15 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   margin-bottom: 15px;
 }
 
+.k-notification > .k-font-icon {
+  font-size: 25px;
+  margin-left: 5px;
+}
+.k-notification .k-notification-content {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
 .k-listgroup .k-link {
   justify-content: space-between;
 }
@@ -78252,6 +78261,21 @@ h6,
   font-weight: 600;
 }
 
+.kendo-watermark,
+#k-license-banner {
+  display: none !important;
+}
+
+.loader {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
 .bd-example {
   border: 0px solid #990066;
   padding: 15px;
@@ -78308,6 +78332,12 @@ a {
   margin: 0;
   height: 100%;
 }
+.vzd-body.vzd-my-tasks {
+  padding-right: 270px;
+}
+.vzd-body.vzd-my-tasks .vzd-container {
+  border-right: 1px solid #bcbcbc;
+}
 
 .vzd-left-bar {
   position: fixed;
@@ -78316,6 +78346,16 @@ a {
   top: 0;
   width: 220px;
   z-index: 3;
+}
+
+.vzd-right-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 250px;
+  z-index: 3;
+  padding: 10px;
 }
 
 .vzd-logo {
@@ -78486,6 +78526,11 @@ a {
   content: "\e804";
 }
 
+.vzd-my-tasks .vzd-header h1::before {
+  font-family: "fontello";
+  content: "\e803";
+}
+
 .vzd-general .vzd-header h1::before {
   content: "\e666";
 }
@@ -78640,6 +78685,164 @@ a {
 
 .vzd-popover.k-popover-callout.k-callout-s {
   left: 12%;
+}
+
+.vzd-workflow-holder .k-expander-header {
+  padding-block: 8px;
+  padding-inline: 10px;
+  font-size: 0.8rem;
+}
+.vzd-workflow-holder .k-expander-header .k-expander-title {
+  line-height: 15px;
+}
+.vzd-workflow-holder .k-expander-content {
+  padding-block: 8px;
+  padding-inline: 8px;
+}
+
+.vzd-workflow {
+  border-left: 2px solid #990066;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.vzd-workflow .vzd-workflow-item-start {
+  padding-left: 20px;
+  line-height: 30px;
+  transform: translateY(-20%);
+  position: relative;
+}
+.vzd-workflow .vzd-workflow-item-start::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #990066;
+  left: -11px;
+  top: 5px;
+  background-color: #fff;
+}
+.vzd-workflow .vzd-workflow-item {
+  padding-left: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.vzd-workflow .vzd-workflow-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 2px solid #990066;
+  left: -6px;
+  top: 14px;
+  background-color: #fff;
+  z-index: 2;
+}
+.vzd-workflow .vzd-workflow-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  left: -1px;
+  top: 18px;
+  background-color: #990066;
+  z-index: 0;
+}
+.vzd-workflow .vzd-workflow-item a {
+  display: flex;
+  padding-left: 50px;
+  position: relative;
+  min-height: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.vzd-workflow .vzd-workflow-item a::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #990066;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  z-index: 1;
+}
+.vzd-workflow .vzd-workflow-item a span {
+  line-height: 15px;
+  display: block;
+}
+.vzd-workflow .vzd-workflow-item-manual > .vzd-workflow-item-content > a::before {
+  content: "\e801";
+  font-family: "WebComponentsIcons";
+  font-size: 24px;
+  margin-right: 5px;
+  color: #990066;
+  font-weight: 500;
+}
+.vzd-workflow .vzd-workflow-item-automatic > .vzd-workflow-item-content > a::before {
+  content: "\e13a";
+  font-family: "WebComponentsIcons";
+  font-size: 24px;
+  margin-right: 5px;
+  color: #990066;
+  font-weight: 500;
+}
+.vzd-workflow .vzd-workflow-step-current::before {
+  background-color: #990066;
+}
+.vzd-workflow .vzd-workflow-step-current.vzd-workflow-step-paused::before {
+  background-color: #cc6600;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  top: 9px;
+  left: -11px;
+  content: "\e20d";
+  text-align: center;
+  font-family: "WebComponentsIcons";
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-indent: 1px;
+}
+.vzd-workflow .vzd-workflow-step-current > .vzd-workflow-item-content > a::before {
+  background-color: #990066;
+  color: #fff;
+}
+.vzd-workflow .vzd-workflow-item-paralel a {
+  background-color: #fff;
+}
+.vzd-workflow .vzd-workflow-item-paralel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  top: 0;
+  left: 39px;
+  background-color: #990066;
+  bottom: 0px;
+  z-index: 0;
+}
+.vzd-workflow div.vzd-workflow-item:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 30px;
+  left: -2px;
+  top: 18px;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 0;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #990066;
 }
 
 /*# sourceMappingURL=style.css.map */

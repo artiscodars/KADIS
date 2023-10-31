@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,33 +48,6 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Formas",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
@@ -91,190 +57,230 @@
 
           <form id="exampleform"></form>
 
-          <script>
-            $(document).ready(function () {
-              var validationSuccess = $("#validation-success");
-
-              $("#exampleform").kendoForm({
-                orientation: "vertical",
-                /*  formData: {
-                          TextBox: "John Doe",
-                          TextArea: "Multiline\nInput",
-                          NumericTextBox: 2,
-                          MaskedTextBox: 21313,
-                          DatePicker: new Date(),
-                          DateTimePicker: new Date(),
-                          Switch: true,
-                          RadioGroup: "Admin",
-                          CheckBoxGroup: ["Spanish"],
-                          ComboBox: 1,
-                          DropDownList: 2
-                      },*/
-                items: [
-                  {
-                    field: "TextBox",
-                    label: "Ievadlauks:",
-                    validation: { required: true },
-                    editor: "TextBox",
-                    editorOptions: {
-                      placeholder: "Datus ievadi te...",
-                    },
-                  },
-                  {
-                    field: "TextArea",
-                    label: "Satura lauks:",
-                    editor: "TextArea",
-                    editorOptions: {
-                      placeholder: "Ievadi aprakstu te...",
-                      rows: 2,
-                    },
-                  },
-                  {
-                    field: "NumericTextBox",
-                    editor: "NumericTextBox",
-                    label: "Skaiļa lauks:",
-                    validation: { required: true },
-                  },
-
-                  {
-                    field: "DatePicker",
-                    editor: "DatePicker",
-                    label: "Datums:",
-                    validation: { required: true },
-                  },
-                  {
-                    field: "DateTimePicker",
-                    editor: "DateTimePicker",
-                    label: "Datums un laiks:",
-                    validation: { required: true },
-                  },
-                  {
-                    field: "RadioGroup",
-                    editor: "RadioGroup",
-                    label: "Vienas izvēles lauki:",
-                    validation: { required: true },
-                    editorOptions: {
-                      items: ["Viens", "Divi", "Trīs"],
-                      layout: "horizontal",
-                      labelPosition: "before",
-                    },
-                  },
-                  {
-                    field: "RadioGroup2",
-                    editor: "RadioGroup",
-                    label: "Vienas izvēles lauki 2:",
-                    validation: { required: true },
-                    editorOptions: {
-                      items: ["Viens", "Divi", "Trīs"],
-                      layout: "vertical",
-                      labelPosition: "after",
-                    },
-                  },
-                  {
-                    field: "CheckBoxGroup",
-                    editor: "CheckBoxGroup",
-                    label: "Vairāku vērtību izvēle:",
-                    validation: { required: false },
-                    editorOptions: {
-                      items: ["Viens", "Divi", "Trīs"],
-                      layout: "horizontal",
-                      labelPosition: "before",
-                    },
-                  },
-                  {
-                    field: "CheckBoxGroup2",
-                    editor: "CheckBoxGroup",
-                    label: "Vairāku vērtību izvēle 2:",
-                    validation: { required: false },
-                    editorOptions: {
-                      items: ["Viens", "Divi", "Trīs"],
-                      layout: "vertical",
-                      labelPosition: "after",
-                    },
-                  },
-                  {
-                    field: "Switch",
-                    editor: "Switch",
-                    label: "Pārslēgs:",
-                    validation: { required: true },
-                    editorOptions: {
-                      messages: {
-                        checked: "Jā",
-                        unchecked: "Nē",
-                      },
-                      
-                    },
-                  },
-
-                  {
-                    field: "ComboBox",
-                    editor: "ComboBox",
-                    label: "Combo:",
-                    validation: { required: true },
-                    editorOptions: {
-                      placeholder: "Izvēlies no saraksta",
-                      dataTextField: "ProductName",
-                      dataValueField: "ProductID",
-                      filter: "contains",
-                      dataSource: {
-                        type: "odata",
-                        serverFiltering: true,
-                        transport: {
-                          read: {
-                            url: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
-                          },
-                        },
-                      },
-                    },
-                  },
-                  {
-                    field: "DropDownList",
-                    editor: "DropDownList",
-                    label: "Select 2:",
-                    validation: { required: true },
-                    editorOptions: {
-                      placeholder: "Izvēlies",
-                      dataTextField: "ProductName",
-                      dataValueField: "ProductID",
-                      filter: "contains",
-                      dataSource: {
-                        type: "odata",
-                        serverFiltering: true,
-                        transport: {
-                          read: {
-                            url: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
-                          },
-                        },
-                      },
-                    },
-                  },
-                ],
-                messages: {
-            submit:"Saglabāt",
-            clear: "Atcelt",
-        },
-                validateField: function (e) {
-                  validationSuccess.html("");
-                },
-                submit: function (e) {
-                  e.preventDefault();
-                  validationSuccess.html(
-                    "<div class='k-messagebox k-messagebox-success'>Form data is valid!</div>"
-                  );
-                },
-                clear: function (ev) {
-                  validationSuccess.html("");
-                },
-              });
-            });
-          </script>
           <style>
             .k-list-horizontal {
               margin-top: 5px;
             }
           </style>
         </div>
+        <div class="k-card">
+          <div class="k-card-body">
+            <a href="https://demos.telerik.com/aspnet-core/form" target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Formas",
+            showText: true,
+          },
+        ],
+      });
+
+      $(document).ready(function () {
+        var validationSuccess = $("#validation-success");
+
+        $("#exampleform").kendoForm({
+          orientation: "vertical",
+          /*  formData: {
+                    TextBox: "John Doe",
+                    TextArea: "Multiline\nInput",
+                    NumericTextBox: 2,
+                    MaskedTextBox: 21313,
+                    DatePicker: new Date(),
+                    DateTimePicker: new Date(),
+                    Switch: true,
+                    RadioGroup: "Admin",
+                    CheckBoxGroup: ["Spanish"],
+                    ComboBox: 1,
+                    DropDownList: 2
+                },*/
+          items: [
+            {
+              field: "TextBox",
+              label: "Ievadlauks:",
+              validation: { required: true },
+              editor: "TextBox",
+              editorOptions: {
+                placeholder: "Datus ievadi te...",
+              },
+            },
+            {
+              field: "TextArea",
+              label: "Satura lauks:",
+              editor: "TextArea",
+              editorOptions: {
+                placeholder: "Ievadi aprakstu te...",
+                rows: 2,
+              },
+            },
+            {
+              field: "NumericTextBox",
+              editor: "NumericTextBox",
+              label: "Skaiļa lauks:",
+              validation: { required: true },
+            },
+
+            {
+              field: "DatePicker",
+              editor: "DatePicker",
+              label: "Datums:",
+              validation: { required: true },
+            },
+            {
+              field: "DateTimePicker",
+              editor: "DateTimePicker",
+              label: "Datums un laiks:",
+              validation: { required: true },
+            },
+            {
+              field: "RadioGroup",
+              editor: "RadioGroup",
+              label: "Vienas izvēles lauki:",
+              validation: { required: true },
+              editorOptions: {
+                items: ["Viens", "Divi", "Trīs"],
+                layout: "horizontal",
+                labelPosition: "before",
+              },
+            },
+            {
+              field: "RadioGroup2",
+              editor: "RadioGroup",
+              label: "Vienas izvēles lauki 2:",
+              validation: { required: true },
+              editorOptions: {
+                items: ["Viens", "Divi", "Trīs"],
+                layout: "vertical",
+                labelPosition: "after",
+              },
+            },
+            {
+              field: "CheckBoxGroup",
+              editor: "CheckBoxGroup",
+              label: "Vairāku vērtību izvēle:",
+              validation: { required: false },
+              editorOptions: {
+                items: ["Viens", "Divi", "Trīs"],
+                layout: "horizontal",
+                labelPosition: "before",
+              },
+            },
+            {
+              field: "CheckBoxGroup2",
+              editor: "CheckBoxGroup",
+              label: "Vairāku vērtību izvēle 2:",
+              validation: { required: false },
+              editorOptions: {
+                items: ["Viens", "Divi", "Trīs"],
+                layout: "vertical",
+                labelPosition: "after",
+              },
+            },
+            {
+              field: "Switch",
+              editor: "Switch",
+              label: "Pārslēgs:",
+              validation: { required: true },
+              editorOptions: {
+                messages: {
+                  checked: "Jā",
+                  unchecked: "Nē",
+                },
+              },
+            },
+
+            {
+              field: "ComboBox",
+              editor: "ComboBox",
+              label: "Combo:",
+              validation: { required: true },
+              editorOptions: {
+                placeholder: "Izvēlies no saraksta",
+                dataTextField: "ProductName",
+                dataValueField: "ProductID",
+                filter: "contains",
+                dataSource: {
+                  type: "odata",
+                  serverFiltering: true,
+                  transport: {
+                    read: {
+                      url: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
+                    },
+                  },
+                },
+              },
+            },
+            {
+              field: "DropDownList",
+              editor: "DropDownList",
+              label: "Select 2:",
+              validation: { required: true },
+              editorOptions: {
+                placeholder: "Izvēlies",
+                dataTextField: "ProductName",
+                dataValueField: "ProductID",
+                filter: "contains",
+                dataSource: {
+                  type: "odata",
+                  serverFiltering: true,
+                  transport: {
+                    read: {
+                      url: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
+                    },
+                  },
+                },
+              },
+            },
+          ],
+          messages: {
+            submit: "Saglabāt",
+            clear: "Atcelt",
+          },
+          validateField: function (e) {
+            validationSuccess.html("");
+          },
+          submit: function (e) {
+            e.preventDefault();
+            validationSuccess.html(
+              "<div class='k-messagebox k-messagebox-success'>Form data is valid!</div>"
+            );
+          },
+          clear: function (ev) {
+            validationSuccess.html("");
+          },
+        });
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

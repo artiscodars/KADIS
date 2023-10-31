@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KADIS dizaina sistēma</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="style/style.min.css" rel="stylesheet" />
+  </head>
+  <body class="vzd-body vzd-my-tasks">
+    <div class="loader"></div>
+    <div class="vzd-left-bar">
+      <div id="menu-example2"></div>
+
+      <div id="user-container"></div>
+
+      <div class="vzd-menu-toggle"></div>
+    </div>
+
+    <div class="vzd-container">
+      <div class="vzd-header">
+        <h1>Mani uzdevumi</h1>
+      </div>
+      <div class="vzd-breadcrumb">
+        <nav id="breadcrumb"></nav>
+      </div>
+
+      <div class="vzd-content-holder">...</div>
+    </div>
+
+    <div class="vzd-right-bar">
+      <h2 class="k-text-uppercase k-mt-1">
+        <span
+          class="k-font-icon k-i-txt k-font-size-lg k-mr-1 k-color-primary"
+        ></span
+        >Pakalpojumi
+      </h2>
+      <div class="vzd-workflow-holder">
+        <div id="task1">...</div>
+        <div id="task2">
+          <div id="subtask1"></div>
+          <div id="subtask2">
+            <div class="vzd-workflow">
+              <div class="vzd-workflow-item-start">Pakalpojuma pieteikums</div>
+
+              <div
+                class="vzd-workflow-item vzd-workflow-step-done vzd-workflow-item-manual"
+              >
+                <div class="vzd-workflow-item-content">
+                  <a href="#"><span>Iesnieguma izvērtēšana</span></a>
+                </div>
+
+                <div
+                  class="vzd-workflow-item-paralel vzd-workflow-step-done vzd-workflow-item-automatic"
+                >
+                  <div class="vzd-workflow-item-content">
+                    <a href="#"><span>Cita dokumentu izpēte</span></a>
+                  </div>
+                </div>
+
+                <div
+                  class="vzd-workflow-item-paralel vzd-workflow-step-done vzd-workflow-item-automatic"
+                >
+                  <div class="vzd-workflow-item-content">
+                    <a href="#"><span>Dokumentu izpēte</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="vzd-workflow-item vzd-workflow-step-paused vzd-workflow-step-current vzd-workflow-item-manual"
+              >
+                <div class="vzd-workflow-item-content">
+                  <a href="#"><span>Kadastrālā uzmērīšana</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "examples-index.html",
+            text: "Mani uzdevumi",
+            showText: true,
+          },
+          {
+            type: "item",
+            text: "Uzdevuma nosaukums",
+            showText: true,
+          },
+        ],
+      });
+      $("#task1").kendoExpansionPanel({
+        title: "427667-1  NĪ -01001010014",
+      });
+
+      $("#task2").kendoExpansionPanel({
+        title: "427667-2 PER-90000000011",
+        expanded: true,
+      });
+
+      $("#subtask1").kendoExpansionPanel({
+        title: "60200 Ierob. info piepr. izvēr",
+      });
+
+      $("#subtask2").kendoExpansionPanel({
+        title: "10101 KU (15 d.d.) ar datu reģ./akt. NĪVKIS",
+        expanded: true,
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
+  </body>
+</html>

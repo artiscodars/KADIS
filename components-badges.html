@@ -29,19 +29,12 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -56,37 +49,28 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Birkas",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
         <h2>Birkas</h2>
+        <div class="k-card">
+          <div class="k-card-body">
+            <p>
+              Birka ir komponente, kas palīdz izcelt kādu citu elementu un tā
+              statusu. Birka var būt piekabināta pie elementa, vai arī tā var
+              būt elementa sastāvdaļa. Birka var būt arī navigācijas elementa
+              sastāvdaļa.
+            </p>
+            <p>
+              Birkām ir dažādas krāsas un izmēri, ko atbilstoši lietojot, var
+              nodrošināt labāku lietotāja pieredzi.
+            </p>
+            <p>
+              Birku lietošanu nevajadzētu pārspēlēt, jo tad lietotāja saskarne
+              var kļūt grūti uztveram un nepārskatāma.
+            </p>
+          </div>
+        </div>
         <div class="bd-example">
           <span
             class="enhancement k-badge k-badge-solid k-badge-solid-primary k-badge-md k-rounded-full k-px-2"
@@ -124,8 +108,6 @@
             data-role="badge"
             >Kļūda</span
           >
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/5cd29ac2c60c5c07c91139b42c4b32b1.js"></script>
         </div>
 
         <div class="bd-example">
@@ -146,8 +128,6 @@
             data-role="badge"
             >Liela</span
           >
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/73494069232ce39110c23f992a7f0e95.js"></script>
         </div>
 
         <div class="bd-example">
@@ -187,8 +167,6 @@
             data-role="badge"
             >Kļūda</span
           >
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/2cd10288d164ba249cd51b483affd7c2.js"></script>
         </div>
 
         <div class="bd-example">
@@ -227,8 +205,6 @@
               >
             </li>
           </ul>
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/ea608eb0d947e94880d4818854aa5a21.js"></script>
         </div>
 
         <div class="bd-example">
@@ -282,8 +258,7 @@
               >
             </button>
           </div>
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/b8baaf4c1fd0ce8d160e7942804f996a.js"></script>
+
           <hr class="k-hr" />
 
           <h4>Rindas birkas</h4>
@@ -336,8 +311,6 @@
               >
             </button>
           </div>
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/eb1bdb0d8b4fb117ccb62fb110596249.js"></script>
         </div>
 
         <div class="bd-example">
@@ -394,10 +367,53 @@
               >
             </li>
           </ul>
-          <piemers />
-          <script src="https://gist.github.com/artiscodars/e7bb7f488879a1be76640b3d54e3eb61.js"></script>
+        </div>
+
+        <div class="k-card">
+          <div class="k-card-body">
+            <a
+              href="https://demos.telerik.com/aspnet-core/badge"
+              target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Birkas",
+            showText: true,
+          },
+        ],
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

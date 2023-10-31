@@ -49,42 +49,50 @@
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
       </div>
-
       <div class="vzd-content-holder">
-        <h2>Datu ielāde</h2>
+        <div class="vzd-workflow-holder">
+          <div id="task1">...</div>
+          <div id="task2">
+            <div id="subtask1"></div>
+            <div id="subtask2">
+              <div class="vzd-workflow">
+                <div class="vzd-workflow-item-start">
+                  Pakalpojuma pieteikums
+                </div>
 
-        <h3>Failu izvēle</h3>
+                <div
+                  class="vzd-workflow-item vzd-workflow-step-done vzd-workflow-item-manual"
+                >
+                  <div class="vzd-workflow-item-content">
+                    <a href="#"><span>Iesnieguma izvērtēšana</span></a>
+                  </div>
 
-        <div class="bd-example">
-          <input name="files" id="files" type="file" aria-label="files" />
+                  <div
+                    class="vzd-workflow-item-paralel vzd-workflow-step-done vzd-workflow-item-automatic"
+                  >
+                    <div class="vzd-workflow-item-content">
+                      <a href="#"><span>Cita dokumentu izpēte</span></a>
+                    </div>
+                  </div>
 
-          <button
-            type="submit"
-            class="k-button k-button-solid-success k-button-solid k-button-md k-rounded-md k-mt-2"
-          >
-            Aiziet
-          </button>
-        </div>
+                  <div
+                    class="vzd-workflow-item-paralel vzd-workflow-step-done vzd-workflow-item-automatic"
+                  >
+                    <div class="vzd-workflow-item-content">
+                      <a href="#"><span>Dokumentu izpēte</span></a>
+                    </div>
+                  </div>
+                </div>
 
-        <h3>Failu iemešanas laukums</h3>
-
-        <div class="bd-example">
-          <input
-            name="files"
-            id="dropzone_files"
-            type="file"
-            aria-label="files"
-          />
-        </div>
-
-        <div class="k-card">
-          <div class="k-card-body">
-            <a
-              href="https://demos.telerik.com/aspnet-core/upload"
-              target="_blank"
-              >Telerik UI ASP.NET Core dokumentācija
-              <span class="k-font-icon k-i-hyperlink-open-sm"></span
-            ></a>
+                <div
+                  class="vzd-workflow-item vzd-workflow-step-paused vzd-workflow-step-current vzd-workflow-item-manual"
+                >
+                  <div class="vzd-workflow-item-content">
+                    <a href="#"><span>Kadastrālā uzmērīšana</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -115,25 +123,31 @@
           {
             type: "item",
             //href: "/index",
-            text: "Datu ielāde",
+            text: "Laika līnija",
             showText: true,
           },
         ],
       });
 
-      $(document).ready(function () {
-        $("#files").kendoUpload({});
+      $("#task1").kendoExpansionPanel({
+        title: "427667-1  NĪ -01001010014",
+      });
 
-        $("#dropzone_files").kendoUpload({
-          multiple: true,
-          async: {
-            saveUrl: "save",
-            removeUrl: "remove",
-            autoUpload: false,
-          },
-        });
+      $("#task2").kendoExpansionPanel({
+        title: "427667-2 PER-90000000011",
+        expanded: true,
+      });
+
+      $("#subtask1").kendoExpansionPanel({
+        title: "60200 Ierob. info piepr. izvēr",
+      });
+
+      $("#subtask2").kendoExpansionPanel({
+        title: "10101 KU (15 d.d.) ar datu reģ./akt. NĪVKIS",
+        expanded: true,
       });
     </script>
+
     <!-- here are all app f-ions and reusable elements -->
     <script src="js/app-setup.js"></script>
   </body>

@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,39 +48,136 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Tabulas",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
         <h2>Tabulas</h2>
-        ...
+        <div class="bd-example">
+          <div id="grid"></div>
+        </div>
+        <div class="k-card">
+          <div class="k-card-body">
+            <a href="https://demos.telerik.com/aspnet-core/grid" target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Tabulas",
+            showText: true,
+          },
+        ],
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var crudServiceBaseUrl = "https://demos.telerik.com/kendo-ui/service",
+          dataSource = new kendo.data.DataSource({
+            transport: {
+              read: {
+                url: crudServiceBaseUrl + "/Products",
+                dataType: "jsonp",
+              },
+              update: {
+                url: crudServiceBaseUrl + "/Products/Update",
+                dataType: "jsonp",
+              },
+              destroy: {
+                url: crudServiceBaseUrl + "/Products/Destroy",
+                dataType: "jsonp",
+              },
+              create: {
+                url: crudServiceBaseUrl + "/Products/Create",
+                dataType: "jsonp",
+              },
+              parameterMap: function (options, operation) {
+                if (operation !== "read" && options.models) {
+                  return { models: kendo.stringify(options.models) };
+                }
+              },
+            },
+            batch: true,
+            pageSize: 20,
+            schema: {
+              model: {
+                id: "ProductID",
+                fields: {
+                  ProductID: { editable: false, nullable: true },
+                  ProductName: { validation: { required: true } },
+                  UnitPrice: {
+                    type: "number",
+                    validation: { required: true, min: 1 },
+                  },
+                  Discontinued: { type: "boolean" },
+                  UnitsInStock: {
+                    type: "number",
+                    validation: { min: 0, required: true },
+                  },
+                },
+              },
+            },
+          });
+
+        $("#grid").kendoGrid({
+          dataSource: dataSource,
+          pageable: true,
+          //height: 550,
+          toolbar: [
+            {
+              name: "create",
+              template:
+                '<button data-role="button" class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-info k-toolbar-button k-grid-add k-toolbar-tool" type="button" role="button"><span class="k-icon k-font-icon k-i-plus k-button-icon" aria-hidden="true"></span><span class="k-button-text">Pievienot</span></button>',
+            },
+          ],
+          columns: [
+            { field: "ProductName", title: "Nosaukums" },
+            {
+              field: "UnitPrice",
+              title: "Cena",
+              format: "{0:c}",
+              width: "120px",
+            },
+            { field: "UnitsInStock", title: "Krājumi", width: "120px" },
+            { field: "Discontinued", title: "Statuss", width: "120px" },
+            {
+              command: ["edit", "destroy"],
+              title: "&nbsp;",
+              width: "200px",
+            },
+          ],
+          editable: "inline",
+        });
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

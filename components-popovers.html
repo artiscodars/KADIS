@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,33 +48,7 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Info lodziņi",
-                showText: true,
-              },
-            ],
-          });
-        </script>
+        
       </div>
 
       <div class="vzd-content-holder">
@@ -102,58 +69,15 @@
           
           <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md" id="button">Atvērt</button>
         
-          <script>
-            $(document).ready(function () {
-              $("#button").kendoPopover({
-               //filter: "strong",
-  
-                width: "200px",
-                actionsLayout: "end",
-                actions: [
-                  {
-                    text: "Iziet",
-                  },
-                ],
-                header: `
-                    <div
-                class="k-d-flex k-justify-content-end k-gap-2"
-              >
-                <div class="k-font-bold">LV</div>
-                <div class="">EN</div>
-              </div>
-                    `,
-                body: `
-        
-                <ul id="user-menu">
-                  <li class="user-profile k-text-uppercase">
-                    <a href="user-profile.html"
-                      >
-                      Mans profils</a
-                    >
-                  </li>
-                  <li class="user-settings k-text-uppercase">
-                    <a href="settings.html"
-                      >
-                      Iestatījumi</a
-                    >
-                  </li>
-                </ul>
-              
-        `,
-                position: "top",
-              });
-            });
-          </script>
+          
 
-<piemers/>
 
-<script src="https://gist.github.com/artiscodars/013eca6e2bcb7ec97dcf358953d5c6a5.js"></script>
 
         
         </div>
 
       <h3>HTML piemērs</h3>
-        <div class="bd-example">
+        <div class="bd-example !k-pb-7">
        
 
         <div class="k-popover k-z-0 k-pos-relative" style="width: 217px">
@@ -180,14 +104,93 @@
           </div>
         </div>
 
-        <piemers/>
-
-        <script src="https://gist.github.com/artiscodars/ba960d2e939c6bea973f9d5c5185efd8.js"></script>
-
-
-
-
+      </div>
+      <div class="k-card">
+        <div class="k-card-body">
+          <a
+            href="https://demos.telerik.com/aspnet-core/popover"
+            target="_blank"
+            >Telerik UI ASP.NET Core dokumentācija
+            <span class="k-font-icon k-i-hyperlink-open-sm"></span
+          ></a>
+        </div>
       </div>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Info lodziņi",
+            showText: true,
+          },
+        ],
+      });
+
+  $(document).ready(function () {
+    $("#button").kendoPopover({
+     //filter: "strong",
+
+      width: "200px",
+      actionsLayout: "end",
+      actions: [
+        {
+          text: "Iziet",
+        },
+      ],
+      header: `
+          <div
+      class="k-d-flex k-justify-content-end k-gap-2"
+    >
+      <div class="k-font-bold">LV</div>
+      <div class="">EN</div>
+    </div>
+          `,
+      body: `
+
+      <ul id="user-menu">
+        <li class="user-profile k-text-uppercase">
+          <a href="user-profile.html"
+            >
+            Mans profils</a
+          >
+        </li>
+        <li class="user-settings k-text-uppercase">
+          <a href="settings.html"
+            >
+            Iestatījumi</a
+          >
+        </li>
+      </ul>
+    
+`,
+      position: "top",
+    });
+  });
+</script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

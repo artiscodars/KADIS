@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,110 +48,130 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Akordioni",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
         <h2>Akordioni</h2>
+
+        <div class="k-card">
+          <div class="k-card-body">
+            Akordions ir komponente, kas ļauj izvēlēties vienu no vairākiem datu
+            blokiem, kas ir paslēpti aiz virsrakstiem. Akordions ir noderīgs, ja
+            ir nepieciešams ierobežot lietotāja redzamo informāciju, lai viņš
+            varētu koncentrēties uz svarīgāko. Akordionus ir lietderīgi izmantot
+            komplicētās un garās ievadformās, kurās ir daudz sekcijas, lai tās
+            būtu pērskatāmākas.
+          </div>
+        </div>
+
         <div class="bd-example">
-         
-            <div id="kurzeme">
-              Sed tempus justo et lectus ultrices, in malesuada odio blandit.
-              Sed consectetur quam id iaculis pretium. Pellentesque ac aliquam
-              ante. Quisque dapibus tempus nibh. Aenean gravida tempor dui at
-              pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
-              augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
-              Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
-              dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
-              vestibulum euismod.
-            </div>
-            <div id="zemgale">
-              Sed tempus justo et lectus ultrices, in malesuada odio blandit.
-              Sed consectetur quam id iaculis pretium. Pellentesque ac aliquam
-              ante. Quisque dapibus tempus nibh. Aenean gravida tempor dui at
-              pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
-              augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
-              Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
-              dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
-              vestibulum euismod.
-            </div>
-            <div id="vidzeme">
-              Sed tempus justo et lectus ultrices, in malesuada odio blandit.
-              Sed consectetur quam id iaculis pretium. Pellentesque ac aliquam
-              ante. Quisque dapibus tempus nibh. Aenean gravida tempor dui at
-              pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
-              augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
-              Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
-              dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
-              vestibulum euismod.
-            </div>
-            <div id="latgale">
-              Sed tempus justo et lectus ultrices, in malesuada odio blandit.
-              Sed consectetur quam id iaculis pretium. Pellentesque ac aliquam
-              ante. Quisque dapibus tempus nibh. Aenean gravida tempor dui at
-              pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
-              augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
-              Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
-              dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
-              vestibulum euismod.
-            </div>
-          
+          <div id="kurzeme">
+            Sed tempus justo et lectus ultrices, in malesuada odio blandit. Sed
+            consectetur quam id iaculis pretium. Pellentesque ac aliquam ante.
+            Quisque dapibus tempus nibh. Aenean gravida tempor dui at
+            pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
+            augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
+            Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
+            dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
+            vestibulum euismod.
+          </div>
+          <div id="zemgale">
+            Sed tempus justo et lectus ultrices, in malesuada odio blandit. Sed
+            consectetur quam id iaculis pretium. Pellentesque ac aliquam ante.
+            Quisque dapibus tempus nibh. Aenean gravida tempor dui at
+            pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
+            augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
+            Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
+            dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
+            vestibulum euismod.
+          </div>
+          <div id="vidzeme">
+            Sed tempus justo et lectus ultrices, in malesuada odio blandit. Sed
+            consectetur quam id iaculis pretium. Pellentesque ac aliquam ante.
+            Quisque dapibus tempus nibh. Aenean gravida tempor dui at
+            pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
+            augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
+            Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
+            dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
+            vestibulum euismod.
+          </div>
+          <div id="latgale">
+            Sed tempus justo et lectus ultrices, in malesuada odio blandit. Sed
+            consectetur quam id iaculis pretium. Pellentesque ac aliquam ante.
+            Quisque dapibus tempus nibh. Aenean gravida tempor dui at
+            pellentesque. Fusce aliquet, mi faucibus dignissim egestas, quam
+            augue consectetur nibh, hendrerit faucibus sem libero ut lectus.
+            Nunc et ipsum laoreet, dapibus metus vel, laoreet velit. Donec
+            dapibus mi ut orci volutpat, vel gravida ipsum porta. Donec rutrum
+            vestibulum euismod.
+          </div>
+        </div>
 
-          <script>
-            $("#kurzeme").kendoExpansionPanel({
-              title: "Kurzeme",
-              subTitle: "Kurzemes daba",
-              expanded: true,
-            });
-
-            $("#zemgale").kendoExpansionPanel({
-              title: "Zemgale",
-              subTitle: "Zemgales daba",
-            });
-
-            $("#vidzeme").kendoExpansionPanel({
-              title: "Vidzeme",
-              subTitle: "Vidzemes daba",
-            });
-
-            $("#latgale").kendoExpansionPanel({
-              title: "Latgale",
-              subTitle: "Latgales daba",
-            });
-          </script>
-
-
-
-          <piemers/>
-          <script src="https://gist.github.com/artiscodars/d18cd4f1248cc90d84befe8fb5836d05.js"></script>
+        <div class="k-card">
+          <div class="k-card-body">
+            <a
+              href="https://demos.telerik.com/aspnet-core/expansionpanel"
+              target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Akordioni",
+            showText: true,
+          },
+        ],
+      });
+
+      $("#kurzeme").kendoExpansionPanel({
+        title: "Kurzeme",
+
+        expanded: true,
+      });
+
+      $("#zemgale").kendoExpansionPanel({
+        title: "Zemgale",
+      });
+
+      $("#vidzeme").kendoExpansionPanel({
+        title: "Vidzeme",
+      });
+
+      $("#latgale").kendoExpansionPanel({
+        title: "Latgale",
+      });
+    </script>
+
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

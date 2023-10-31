@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-general">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,33 +48,6 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "general-index.html",
-                text: "Vispārīgi",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Tipogrāfija",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
@@ -93,7 +59,7 @@
               norādījumus, virsrakstus, saturu, sarakstus u.c.
             </p>
             <h2 class="st-title">Teksta burtu veidols un izmērs</h2>
-            <p>Aplikācija izmanto burtu veidolu "RobustaTLPro-Regular".</p>
+            <p>Aplikācija izmanto burtu veidolu ""Open Sans",sans-serif".</p>
             <script src="https://gist.github.com/artiscodars/38255dbed09065f3bce7959121421479.js"></script>
             <h2 class="st-title">Virsraksti</h2>
 
@@ -110,7 +76,7 @@
 
               <h6>h6 - Sestā līmeņa virsraksts</h6>
 
-              <piemers/>
+              <piemers />
 
               <script src="https://gist.github.com/artiscodars/35e6a9ef25843484992eb319c2385214.js"></script>
             </div>
@@ -136,5 +102,39 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "general-index.html",
+            text: "Vispārīgi",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Tipogrāfija",
+            showText: true,
+          },
+        ],
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

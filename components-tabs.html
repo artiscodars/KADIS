@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,39 +48,106 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Mapes",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
         <h2>Mapes</h2>
-        ...
+        <div class="k-card">
+          <div class="k-card-body">
+            <p>
+              Mapes ir komponente, kas ļauj lietotājam izvēlēties vienu no
+              vairākiem datu blokiem, kas ir paslēpti aiz virsrakstiem. Mapes ir
+              noderīgas, ja ir nepieciešams ierobežot lietotāja redzamo
+              informāciju, lai viņš varētu koncentrēties uz vienu lietu
+              vienlaicīgi. Mapes ieteicams lietot, ja to skaits nepārsniedz
+              ekrāna izmērus.
+            </p>
+            <p>Mapēm nav ieteicams lietot garus nosukumus.</p>
+            <p>
+              Ja mapju skaits ir pārāl liels un to nosaukumi ir gari un
+              nepārskatāmi, tad ir jāizmanto akordioni.
+            </p>
+          </div>
+        </div>
+
+        <div class="bd-example">
+          <div id="tabstrip">
+            <ul>
+              <li>Plānotās ZV</li>
+              <li class="k-active">Plānotās ZV</li>
+              <li>Plānotās ZV daļas</li>
+            </ul>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
+
+        <div class="k-card">
+          <div class="k-card-body">
+            <a
+              href="https://demos.telerik.com/aspnet-core/tabstrip"
+              target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+  <!-- kendo JS -->
+  <script src="js/kendo.all.min.js"></script>
+  <!-- here are all app f-ions and reusable elements -->
+  <script>
+    $("#breadcrumb").kendoBreadcrumb({
+      navigational: true,
+      items: [
+        {
+          type: "rootitem",
+          href: "index.html",
+          text: "Sākums",
+          showText: false,
+          icon: "home",
+          showIcon: true,
+        },
+        {
+          type: "item",
+          href: "components-index.html",
+          text: "Komponentes",
+          showText: true,
+        },
+        {
+          type: "item",
+          //href: "/index",
+          text: "Mapes",
+          showText: true,
+        },
+      ],
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#tabstrip").kendoTabStrip({
+        animation: {
+          open: {
+            effects: "fadeIn",
+          },
+        },
+      });
+    });
+  </script>
+
+  <script src="js/app-setup.js"></script>
 </html>

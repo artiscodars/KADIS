@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,39 +48,231 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Pogas",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
         <h2>Pogas</h2>
-        ...
+        <div class="bd-example">
+          <h4>Pilnās pogas</h4>
+          <p>
+            <button
+              <button
+              id="textButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"
+            >
+              Pamata poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-primary"
+            >
+              Primārā poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-secondary"
+            >
+              Sekundārā poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-tertiary"
+            >
+              Tertiārā poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-info"
+            >
+              Jauna izveides poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-success"
+            >
+              Saglabāšanas poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-warning"
+            >
+              Uzmanību poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-error"
+            >
+              Dzēst poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-light"
+            >
+              Neuzkrītošā poga
+            </button>
+          </p>
+
+          <h4>Līniju pogas</h4>
+          <p>
+            <button
+              <button
+              id="textButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-base"
+            >
+              Pamata poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-primary"
+            >
+              Primārā poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-secondary"
+            >
+              Sekundārā poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-tertiary"
+            >
+              Tertiārā poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-info"
+            >
+              Jauna izveides poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-success"
+            >
+              Saglabāšanas poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-warning"
+            >
+              Uzmanību poga
+            </button>
+            <button
+              id="primaryTextButton"
+              class="k-button k-button-md k-rounded-md k-button-outline k-button-outline-error"
+            >
+              Dzēst poga
+            </button>
+          </p>
+
+          <div>
+            <h4>Atspējotā poga</h4>
+            <p>Tiek pievienota klase "k-disabled".</p>
+            <p>
+              <button
+                class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-primary k-disabled"
+              >
+                Atspējota primārā poga
+              </button>
+            </p>
+          </div>
+
+          <div>
+            <h4>Pogas ar ikonām</h4>
+            <p>
+              <button
+                class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"
+              >
+                <span class="k-font-icon k-i-filter"></span>
+                Atlasīt
+              </button>
+            </p>
+          </div>
+
+          <h4>Pogu grupa</h4>
+
+          <div class="k-button-group k-button-group-solid">
+            <button
+              class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md"
+            >
+              <span class="k-button-text"> First </span>
+            </button>
+            <button
+              class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md"
+            >
+              <span class="k-button-text"> Middle </span>
+            </button>
+            <button
+              class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md"
+            >
+              <span class="k-button-text"> Last </span>
+            </button>
+          </div>
+
+          <h4>Dalītā poga</h4>
+          <button id="button">Izvēlies darbību</button>
+        </div>
+        <div class="k-card">
+          <div class="k-card-body">
+            <a
+              href="https://demos.telerik.com/aspnet-core/button"
+              target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Pogas",
+            showText: true,
+          },
+        ],
+      });
+
+      $(document).ready(function () {
+        $("#button").kendoSplitButton({
+          icon: "clipboard",
+          items: [
+            { id: "keep-text", text: "Keep Text Only", icon: "clipboard-text" },
+            { id: "paste-html", text: "Paste as HTML", icon: "clipboard-code" },
+            {
+              id: "paste-markdown",
+              text: "Paste Markdown",
+              icon: "clipboard-markdown",
+            },
+            { id: "paste-default", text: "Set Default Paste" },
+          ],
+        });
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>

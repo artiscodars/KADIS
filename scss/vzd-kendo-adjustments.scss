@@ -22,6 +22,16 @@
 .k-card {
   margin-bottom: 15px;
 }
+.k-notification {
+  > .k-font-icon {
+    font-size: 25px;
+    margin-left: 5px;
+  }
+  .k-notification-content {
+    font-size: $kendo-font-size;
+    padding: 10px;
+  }
+}
 
 .k-listgroup {
   .k-link {

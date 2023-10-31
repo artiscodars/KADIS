@@ -82,13 +82,10 @@ function setupApp() {
               <a href="components-buttons.html">
               Pogas </a>
               </li>
+              
               <li>
-              <a href="components-progress-indicators.html">
-              Progresa indikātori </a>
-              </li>
-              <li>
-              <a href="components-lists.html">
-              Saraksti </a>
+              <a href="components-timeline.html">
+              Laika līnija </a>
               </li>
               <li>
               <a href="components-tables.html">
@@ -128,6 +125,28 @@ function setupApp() {
         </ul>
     `;
 
+  var menuExample2 = `
+    <a href="index.html"><img src="images/logo.svg" class="vzd-logo" /></a>
+      <div class="vzd-app-title">Kadastra informācijas sistēma</div>
+      <div class="vzd-app-small-title">KADIS</div>
+        <ul id="menu" class="vzd-menu">
+        <li class="dashboard"><a href="#">Darbvirsma</a></li>
+        <li class="my-tasks active"><a href="#">Mani uzdevumi</a></li>
+        <li class="orders"><a href="#">Pasūtījumi</a></li>
+        <li class="land-objects"><a href="#">Zemes vienības</a></li>
+        <li class="admin">
+          <a href="#">Administrēšana</a>
+            <ul class="submenu">
+                <li>
+                  <a href="#">Iestatījumi</a>
+                </li>
+                <li>
+                  <a href="#">Izkārtojums</a>
+                </li>
+            </ul>
+        </li>       
+        </ul>
+    `;
 
   var userHtml = `
     <div class="vzd-user">
@@ -142,6 +161,7 @@ function setupApp() {
   // containers for inserting the HTML
   $('#menu-container').html(menuHtml);
   $('#menu-example').html(menuExample);
+  $('#menu-example2').html(menuExample2);
   $('#user-container').html(userHtml);
 
   // Include any other logic you need, like initializing the menu with Kendo UI
@@ -161,6 +181,15 @@ function setupApp() {
 $(document).ready(function () {
 
   setupApp();
+
+  $(
+    "div[style='position: absolute; width: 100%; height: 100%; pointer-events: none; inset: 0px;']"
+  )
+    .hide()
+    .fadeIn(500)
+    .addClass("kendo-watermark");
+
+  $(".loader").delay(50).fadeOut("slow");
 
 });
 

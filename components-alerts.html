@@ -21,7 +21,7 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
-    
+
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
@@ -29,18 +29,11 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-    <!-- kendo JS -->
-    <script src="js/kendo.all.min.js"></script>
-
-    <!-- here are all app f-ions and reusable elements -->
-    <script src="js/app-setup.js"></script>
 
     <link href="style/style.min.css" rel="stylesheet" />
   </head>
   <body class="vzd-body vzd-components">
+    <div class="loader"></div>
     <div class="vzd-left-bar">
       <div id="menu-container"></div>
 
@@ -55,39 +48,169 @@
       </div>
       <div class="vzd-breadcrumb">
         <nav id="breadcrumb"></nav>
-        <script>
-          $("#breadcrumb").kendoBreadcrumb({
-            navigational: true,
-            items: [
-              {
-                type: "rootitem",
-                href: "index.html",
-                text: "Sākums",
-                showText: false,
-                icon: "home",
-                showIcon: true,
-              },
-              {
-                type: "item",
-                href: "components-index.html",
-                text: "Komponentes",
-                showText: true,
-              },
-              {
-                type: "item",
-                //href: "/index",
-                text: "Paziņojumi",
-                showText: true,
-              },
-            ],
-          });
-        </script>
       </div>
 
       <div class="vzd-content-holder">
         <h2>Paziņojumi</h2>
-        ...
+
+        <div class="k-card">
+          <div class="k-card-body">
+            <p>
+              Ir četru tipu paziņojumi - bez ikonām, ar ikonu, ar ikonu un
+              aizvērt pogu un ar ikonu un aizvērt pogu.
+            </p>
+            <p>
+              Paziņojumi ir izmantojami, lai informētu lietotāju par kādu
+              notikumu, kas ir noticis vai notiks. Tos var izkārtot lapas
+              galvenē, vai arī kā piespraustus elementus kādā no lapas stūriem
+              vai citās pozīcijās. Šādos gadījumos izmanto to absolūto
+              pozicionējumu un noteikti tajā tiek ietverta aizvērt poga vai arī
+              tam ir jāizgaist pēc 2-3 sekundēm.
+            </p>
+            <p>
+              Izgaistošus paziņojumus izmanto tikai lai nodotu kaut kādu
+              izpildes informāciju, piemēram, veiksmīgi saglabāts, bet tos
+              neizmanto, lai informētu par kļūdām.
+            </p>
+          </div>
+        </div>
+
+        <div class="bd-example">
+          <div class="k-notification k-notification-base k-mb-5">
+            <div class="k-notification-content">Notification</div>
+          </div>
+
+          <div
+            class="k-notification k-notification-base k-notification-closable k-mb-5"
+          >
+            <span class="k-font-icon k-i-info-circle"> </span>
+            <div class="k-notification-content">Notification</div>
+          </div>
+
+          <div
+            class="k-notification k-notification-base k-notification-closable k-mb-5"
+          >
+            <div class="k-notification-content">Notification</div>
+            <span class="k-notification-actions">
+              <span class="k-notification-action k-notification-close-action">
+                <span class="k-font-icon k-i-x"> </span>
+              </span>
+            </span>
+          </div>
+
+          <div
+            class="k-notification k-notification-base k-notification-closable k-mb-5"
+          >
+            <span class="k-font-icon k-i-info-circle"> </span>
+            <div class="k-notification-content">Notification</div>
+            <span class="k-notification-actions">
+              <span class="k-notification-action k-notification-close-action">
+                <span class="k-font-icon k-i-x"> </span>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <h2>Krāsa</h2>
+        <div class="k-card">
+          <div class="k-card-body">
+            <p>
+              Paziņojums nodrošina tēmas krāsu konfigurācijas iespējas, norādot
+              atbilstošu klasi.
+              <br />class="k-notification k-notification-<b>base</b>"
+            </p>
+
+            Tēmas krāsa piedāvā šādas pieejamās opcijas:
+
+            <ul>
+              <li>
+                base (noklusējums) - Bāzes paziņojumi parasti tiek izmantoti
+                neitrālai informatīvai informācijai, kas vienmērīgi iederas kopā
+                ar pārējo lietotāja saskarnes daļu.
+
+                <div class="k-notification k-notification-base k-mb-5">
+                  <div class="k-notification-content">base</div>
+                </div>
+              </li>
+              <li>
+                info - Informācijas paziņojumi vislabāk piemēroti paziņojumu
+                brīdinājumiem, kas sniedz neitrālu informāciju par procesu vai
+                darbību.
+                <div class="k-notification k-notification-info k-mb-5">
+                  <div class="k-notification-content">info</div>
+                </div>
+              </li>
+              <li>
+                success - Veiksmes paziņojumi norāda uz veiksmīgu vai pozitīvu
+                procesa vai darbības rezultātu.
+                <div class="k-notification k-notification-success k-mb-5">
+                  <div class="k-notification-content">success</div>
+                </div>
+              </li>
+              <li>
+                warning - Brīdinājuma paziņojumi parasti parādās kā brīdinājums
+                par iespējamām problēmām vai nozīmīgām izmaiņām, kas jāuztver
+                piesardzīgi.
+                <div class="k-notification k-notification-warning k-mb-5">
+                  <div class="k-notification-content">warning</div>
+                </div>
+              </li>
+              <li>
+                error - Kļūdas paziņojumi norāda uz procesa vai darbības
+                iznākumu, kas ir iznīcinošs un neatgriezenisks.
+                <div class="k-notification k-notification-error k-mb-5">
+                  <div class="k-notification-content">error</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="k-card">
+          <div class="k-card-body">
+            <a
+              href="https://demos.telerik.com/aspnet-core/notification"
+              target="_blank"
+              >Telerik UI ASP.NET Core dokumentācija
+              <span class="k-font-icon k-i-hyperlink-open-sm"></span
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- kendo JS -->
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+      $("#breadcrumb").kendoBreadcrumb({
+        navigational: true,
+        items: [
+          {
+            type: "rootitem",
+            href: "index.html",
+            text: "Sākums",
+            showText: false,
+            icon: "home",
+            showIcon: true,
+          },
+          {
+            type: "item",
+            href: "components-index.html",
+            text: "Komponentes",
+            showText: true,
+          },
+          {
+            type: "item",
+            //href: "/index",
+            text: "Paziņojumi",
+            showText: true,
+          },
+        ],
+      });
+    </script>
+    <!-- here are all app f-ions and reusable elements -->
+    <script src="js/app-setup.js"></script>
   </body>
 </html>
