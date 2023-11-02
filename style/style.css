@@ -15993,19 +15993,19 @@ kendo-sortable {
 }
 
 .k-font-size-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .\!k-font-size-md {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 .k-font-size-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .\!k-font-size-lg {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 .k-font-size-xl {
@@ -16033,19 +16033,19 @@ kendo-sortable {
 }
 
 .k-fs-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .\!k-fs-md {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 .k-fs-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .\!k-fs-lg {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 .k-fs-xl {
@@ -25826,7 +25826,7 @@ kendo-sortable {
 
 .k-body,
 .k-typography {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   font-weight: 400;
@@ -25834,15 +25834,15 @@ kendo-sortable {
 }
 .k-body p,
 .k-typography p {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-h1 {
-  font-size: 2.7rem;
+  font-size: 2.55rem;
   font-family: inherit;
   line-height: 54px;
   font-weight: 400;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-h2 {
@@ -25850,15 +25850,15 @@ kendo-sortable {
   font-family: inherit;
   line-height: 46px;
   font-weight: 400;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-family: inherit;
   line-height: 42px;
   font-weight: 400;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-h4 {
@@ -25866,36 +25866,36 @@ kendo-sortable {
   font-family: inherit;
   line-height: 32px;
   font-weight: 700;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: inherit;
   line-height: 26px;
   font-weight: 700;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-h6 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 20px;
   font-weight: 700;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-paragraph {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 20px;
   font-weight: 400;
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 
 .k-pre,
 .k-code {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace;
   line-height: 20px;
   font-weight: 400;
@@ -25924,28 +25924,28 @@ kendo-sortable {
 }
 
 .k-display-1 {
-  font-size: 5.4rem;
+  font-size: 5.1rem;
   font-family: inherit;
   line-height: 1.2;
   font-weight: 300;
 }
 
 .k-display-2 {
-  font-size: 4.5rem;
+  font-size: 4.25rem;
   font-family: inherit;
   line-height: 1.2;
   font-weight: 300;
 }
 
 .k-display-3 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   font-family: inherit;
   line-height: 1.2;
   font-weight: 300;
 }
 
 .k-display-4 {
-  font-size: 2.7rem;
+  font-size: 2.55rem;
   font-family: inherit;
   line-height: 1.2;
   font-weight: 300;
@@ -26159,7 +26159,7 @@ kendo-sortable {
   border-width: 0 0 0 4px;
   border-style: solid;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-messagebox a {
@@ -26235,7 +26235,7 @@ kendo-sortable {
   border-width: 1px;
   border-style: solid;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   display: inline-flex;
@@ -26720,7 +26720,7 @@ kendo-sortable {
 }
 
 .k-list-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-list-sm .k-list-group-sticky-header {
@@ -26737,7 +26737,7 @@ kendo-sortable {
 }
 
 .k-list-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-list-md .k-list-group-sticky-header {
@@ -26754,7 +26754,7 @@ kendo-sortable {
 }
 
 .k-list-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-list-lg .k-list-group-sticky-header {
@@ -26832,7 +26832,7 @@ kendo-sortable {
   padding: 0;
   border-width: 1px;
   border-style: solid;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   list-style: none;
   display: flex;
@@ -27046,7 +27046,7 @@ kendo-sortable {
   border-width: 1px;
   border-style: solid;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -27327,7 +27327,7 @@ kendo-sortable {
 }
 
 .k-table-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -27348,7 +27348,7 @@ kendo-sortable {
 }
 
 .k-table-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -27369,7 +27369,7 @@ kendo-sortable {
 }
 
 .k-table-lg {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -27533,7 +27533,7 @@ kendo-sortable {
 
 .k-avatar-text,
 .k-avatar-initials {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
 }
@@ -27973,7 +27973,7 @@ kendo-badge-container {
   border-style: solid;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1;
   display: inline-flex;
   flex-flow: row nowrap;
@@ -28077,7 +28077,7 @@ kendo-badge-container {
 .k-chip-sm {
   padding-block: 2px;
   padding-inline: 4px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1;
 }
 .k-chip-sm .k-chip-action {
@@ -28093,7 +28093,7 @@ kendo-badge-container {
 .k-chip-md {
   padding-block: 4px;
   padding-inline: 4px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1;
 }
 .k-chip-md .k-chip-action {
@@ -28109,7 +28109,7 @@ kendo-badge-container {
 .k-chip-lg {
   padding-block: 6px;
   padding-inline: 4px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1;
 }
 .k-chip-lg .k-chip-action {
@@ -28691,7 +28691,7 @@ kendo-badge-container {
   gap: 8px;
 }
 .k-loader-container-md .k-loader-container-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .k-loader-container-lg .k-loader-container-inner {
@@ -28699,7 +28699,7 @@ kendo-badge-container {
   gap: 12px;
 }
 .k-loader-container-lg .k-loader-container-label {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .k-loader-top .k-loader-container-inner {
@@ -28941,7 +28941,7 @@ kendo-badge-container {
 .k-button-sm {
   padding-block: 2px;
   padding-inline: 8px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -28949,8 +28949,8 @@ kendo-badge-container {
   padding: 2px;
 }
 .k-button-sm.k-icon-button .k-button-icon {
-  min-width: calc( 0.9rem * 1.7 );
-  min-height: calc( 0.9rem * 1.7 );
+  min-width: calc( 0.85rem * 1.7 );
+  min-height: calc( 0.85rem * 1.7 );
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -28987,7 +28987,7 @@ kendo-badge-container {
 .k-button-md {
   padding-block: 5px;
   padding-inline: 10px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -28995,8 +28995,8 @@ kendo-badge-container {
   padding: 5px;
 }
 .k-button-md.k-icon-button .k-button-icon {
-  min-width: calc( 0.9rem * 1.7 );
-  min-height: calc( 0.9rem * 1.7 );
+  min-width: calc( 0.85rem * 1.7 );
+  min-height: calc( 0.85rem * 1.7 );
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -29033,7 +29033,7 @@ kendo-badge-container {
 .k-button-lg {
   padding-block: 8px;
   padding-inline: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -29041,8 +29041,8 @@ kendo-badge-container {
   padding: 8px;
 }
 .k-button-lg.k-icon-button .k-button-icon {
-  min-width: calc( 1.1rem * 1.5 );
-  min-height: calc( 1.1rem * 1.5 );
+  min-width: calc( 1rem * 1.5 );
+  min-height: calc( 1rem * 1.5 );
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -30003,7 +30003,7 @@ kendo-badge-container {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-wrap: nowrap;
@@ -30153,11 +30153,11 @@ kendo-badge-container {
 }
 
 .k-menu-group-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-menu-group-sm .k-menu-item {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-menu-group-sm .k-menu-link {
@@ -30171,11 +30171,11 @@ kendo-badge-container {
 }
 
 .k-menu-group-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-menu-group-md .k-menu-item {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-menu-group-md .k-menu-link {
@@ -30189,11 +30189,11 @@ kendo-badge-container {
 }
 
 .k-menu-group-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-menu-group-lg .k-menu-item {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-menu-group-lg .k-menu-link {
@@ -30345,7 +30345,7 @@ kendo-badge-container {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   list-style: none;
   display: flex;
@@ -30490,7 +30490,7 @@ kendo-badge-container {
 }
 
 .k-overflow-container {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-overflow-container > .k-item {
@@ -30653,7 +30653,7 @@ kendo-badge-container {
 
 .k-form,
 .k-form-inline {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -31010,7 +31010,7 @@ kendo-label > .k-label {
   background-repeat: repeat-x;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.25;
   display: flex;
   flex-flow: row nowrap;
@@ -31033,7 +31033,7 @@ kendo-label > .k-label {
 
 .k-tooltip-title {
   margin-bottom: 0.25em;
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   line-height: 1;
 }
 
@@ -31177,7 +31177,7 @@ kendo-label > .k-label {
   border-style: solid;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   font-weight: normal;
   text-align: start;
@@ -31540,7 +31540,7 @@ textarea.k-input-inner {
 
 .k-input-sm,
 .k-picker-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-input-sm .k-input-values,
@@ -31603,7 +31603,7 @@ select.k-picker-sm {
 
 .k-input-md,
 .k-picker-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-input-md .k-input-values,
@@ -31666,7 +31666,7 @@ select.k-picker-md {
 
 .k-input-lg,
 .k-picker-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-input-lg .k-input-values,
@@ -31882,7 +31882,7 @@ select.k-picker-lg {
   color: #cc0033;
 }
 .k-floating-label-container {
-  padding-top: calc( 1.7 * 0.9rem );
+  padding-top: calc( 1.7 * 0.85rem );
   box-sizing: border-box;
   display: inline-flex;
   vertical-align: middle;
@@ -31897,12 +31897,12 @@ select.k-picker-lg {
 }
 .k-floating-label-container > .k-label {
   max-width: 90%;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   white-space: nowrap;
   text-overflow: ellipsis;
   position: absolute;
-  top: calc( calc( 1.7 * 0.9rem ) + 1px + 5px );
+  top: calc( calc( 1.7 * 0.85rem ) + 1px + 5px );
   left: calc( 10px + 1px );
   overflow: hidden;
   cursor: text;
@@ -31914,7 +31914,7 @@ select.k-picker-lg {
   width: auto;
 }
 .k-floating-label-container.k-empty > .k-label {
-  top: calc( calc( 1.7 * 0.9rem ) + 1px + 5px );
+  top: calc( calc( 1.7 * 0.85rem ) + 1px + 5px );
   left: calc( 10px + 1px );
   transform: scale(1);
   pointer-events: none;
@@ -32012,7 +32012,7 @@ select.k-picker-lg {
   border-width: 0;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   vertical-align: top;
   background-color: transparent;
@@ -32539,7 +32539,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   background: none;
   display: inline-flex;
@@ -32989,7 +32989,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   position: relative;
   overflow: hidden;
@@ -33202,7 +33202,7 @@ select.k-picker-lg {
   --INTERNAL--kendo-calendar-view-width: 224px;
   --INTERNAL--kendo-calendar-cell-padding-x: var( --kendo-calendar-sm-cell-padding-x, 2px );
   --INTERNAL--kendo-calendar-cell-padding-y: var( --kendo-calendar-sm-cell-padding-y, 2px );
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-calendar-sm.k-month-calendar,
@@ -33226,7 +33226,7 @@ select.k-picker-lg {
   --INTERNAL--kendo-calendar-view-width: 256px;
   --INTERNAL--kendo-calendar-cell-padding-x: var( --kendo-calendar-md-cell-padding-x, 4px );
   --INTERNAL--kendo-calendar-cell-padding-y: var( --kendo-calendar-md-cell-padding-y, 4px );
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-calendar-md.k-month-calendar,
@@ -33250,7 +33250,7 @@ select.k-picker-lg {
   --INTERNAL--kendo-calendar-view-width: 320px;
   --INTERNAL--kendo-calendar-cell-padding-x: var( --kendo-calendar-lg-cell-padding-x, 8px );
   --INTERNAL--kendo-calendar-cell-padding-y: var( --kendo-calendar-lg-cell-padding-y, 8px );
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-calendar-lg.k-month-calendar,
@@ -33553,7 +33553,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   position: relative;
   overflow: hidden;
@@ -33609,7 +33609,7 @@ select.k-picker-lg {
 .k-time-highlight,
 .k-time-list-highlight {
   width: 100%;
-  height: calc( 1.53rem + 8px );
+  height: calc( 1.445rem + 8px );
   border-width: 1px 0px;
   border-style: solid;
   box-sizing: border-box;
@@ -33648,7 +33648,7 @@ select.k-picker-lg {
   width: 100%;
   left: 0;
   pointer-events: none;
-  height: calc( 50% - calc( 1.53rem + 8px )/2 );
+  height: calc( 50% - calc( 1.445rem + 8px )/2 );
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
@@ -33721,7 +33721,7 @@ select.k-picker-lg {
 
 .k-time-separator {
   width: 0;
-  height: calc( 1.53rem + 8px );
+  height: calc( 1.445rem + 8px );
   align-self: center;
   display: inline-flex;
   justify-content: center;
@@ -33732,15 +33732,15 @@ select.k-picker-lg {
 }
 
 .k-timeselector-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-timeselector-sm .k-time-highlight,
 .k-timeselector-sm .k-time-list-highlight {
-  height: calc( 1.53rem + 4px );
+  height: calc( 1.445rem + 4px );
 }
 .k-timeselector-sm .k-time-separator {
-  height: calc( 1.53rem + 4px );
+  height: calc( 1.445rem + 4px );
 }
 .k-timeselector-sm .k-time-list-item,
 .k-timeselector-sm .k-time-list .k-item {
@@ -33749,15 +33749,15 @@ select.k-picker-lg {
 }
 
 .k-timeselector-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-timeselector-md .k-time-highlight,
 .k-timeselector-md .k-time-list-highlight {
-  height: calc( 1.53rem + 8px );
+  height: calc( 1.445rem + 8px );
 }
 .k-timeselector-md .k-time-separator {
-  height: calc( 1.53rem + 8px );
+  height: calc( 1.445rem + 8px );
 }
 .k-timeselector-md .k-time-list-item,
 .k-timeselector-md .k-time-list .k-item {
@@ -33766,15 +33766,15 @@ select.k-picker-lg {
 }
 
 .k-timeselector-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-timeselector-lg .k-time-highlight,
 .k-timeselector-lg .k-time-list-highlight {
-  height: calc( 1.65rem + 16px );
+  height: calc( 1.5rem + 16px );
 }
 .k-timeselector-lg .k-time-separator {
-  height: calc( 1.65rem + 16px );
+  height: calc( 1.5rem + 16px );
 }
 .k-timeselector-lg .k-time-list-item,
 .k-timeselector-lg .k-time-list .k-item {
@@ -33836,7 +33836,7 @@ select.k-picker-lg {
 .k-captcha {
   width: 280px;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   display: flex;
@@ -33896,7 +33896,7 @@ select.k-picker-lg {
   border-width: 0;
   box-sizing: border-box;
   outline: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 0;
   display: inline-flex;
@@ -33952,7 +33952,7 @@ select.k-picker-lg {
   border-width: 1px;
   box-sizing: border-box;
   outline: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   display: flex;
@@ -34158,7 +34158,7 @@ select.k-picker-lg {
   border-style: solid;
   box-sizing: border-box;
   outline: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   display: inline-flex;
@@ -34334,7 +34334,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: block;
   cursor: default;
@@ -34480,7 +34480,7 @@ select.k-picker-lg {
 }
 
 .k-treeview-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-treeview-sm .k-treeview-leaf {
@@ -34493,7 +34493,7 @@ select.k-picker-lg {
 }
 
 .k-treeview-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-treeview-md .k-treeview-leaf {
@@ -34506,7 +34506,7 @@ select.k-picker-lg {
 }
 
 .k-treeview-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-treeview-lg .k-treeview-leaf {
@@ -34568,7 +34568,7 @@ select.k-picker-lg {
   outline: 0;
   background: none;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: inline-flex;
   -webkit-touch-callout: none;
@@ -34929,7 +34929,7 @@ select.k-picker-lg {
   border-width: 1px;
   border-style: solid;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   flex: 1 1 auto;
@@ -34973,7 +34973,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   position: relative;
   display: block;
@@ -35241,7 +35241,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   list-style: none;
   display: flex;
@@ -35383,7 +35383,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   color: inherit;
   background-color: transparent;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   font-family: inherit;
   text-align: center;
@@ -35950,7 +35950,7 @@ select.k-picker-lg {
   border-style: solid;
   border-color: transparent;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   overflow: hidden;
@@ -36107,7 +36107,7 @@ select.k-picker-lg {
 .k-adaptive-actionsheet {
   max-width: 100%;
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -36251,7 +36251,7 @@ select.k-picker-lg {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.25;
   display: inline-flex;
   flex-direction: column;
@@ -36301,7 +36301,7 @@ select.k-picker-lg {
   padding-inline: 0;
   margin-block: -0.5em;
   margin-inline: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.25;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -36519,7 +36519,7 @@ kendo-drawer .k-drawer-wrapper {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -36902,7 +36902,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -36969,7 +36969,7 @@ kendo-card-footer {
   flex: 1 1 auto;
 }
 .k-card-body p {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
 }
 .k-card-body > .k-last,
 .k-card-body > :last-child {
@@ -37007,7 +37007,7 @@ kendo-card-footer {
 
 .k-card-title {
   margin: 0 0 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 400;
 }
@@ -37344,7 +37344,7 @@ kendo-card-footer {
   border-style: solid;
   box-sizing: border-box;
   outline: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   display: flex;
@@ -37487,7 +37487,7 @@ kendo-card-footer {
   border-style: solid;
   border-color: transparent;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: normal;
   font-family: inherit;
   letter-spacing: 0.2px;
@@ -37930,7 +37930,7 @@ kendo-card-footer {
 }
 
 .k-breadcrumb-sm {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-breadcrumb-sm .k-breadcrumb-link,
@@ -37944,7 +37944,7 @@ kendo-card-footer {
 }
 
 .k-breadcrumb-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 .k-breadcrumb-md .k-breadcrumb-link,
@@ -37958,7 +37958,7 @@ kendo-card-footer {
 }
 
 .k-breadcrumb-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .k-breadcrumb-lg .k-breadcrumb-link,
@@ -38006,7 +38006,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   white-space: nowrap;
   display: flex;
@@ -38171,7 +38171,7 @@ kendo-card-footer {
   border-style: solid;
   box-sizing: border-box;
   outline: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   font-family: inherit;
   display: block;
@@ -38462,7 +38462,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   color: inherit;
   background-color: transparent;
@@ -38762,7 +38762,7 @@ kendo-card-footer {
   border-style: solid;
   box-sizing: border-box;
   outline: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   font-family: inherit;
   position: relative;
@@ -38858,7 +38858,7 @@ kendo-card-footer {
   overflow: hidden;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -38951,7 +38951,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   list-style: none;
   display: block;
@@ -39173,7 +39173,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: block;
   position: relative;
@@ -39484,7 +39484,7 @@ kendo-card-footer {
 .k-dock-manager-splitter .k-pane-title,
 .k-dock-manager-unpinned-container .k-pane-title {
   font-family: inherit;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 400;
   flex: 1 1 auto;
@@ -39655,7 +39655,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: block;
   position: relative;
@@ -39678,7 +39678,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   height: 100%;
@@ -40080,7 +40080,7 @@ kendo-card-footer {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -41704,7 +41704,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   flex-flow: column nowrap;
   position: relative;
@@ -41850,7 +41850,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -41880,7 +41880,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   border-color: inherit;
   padding-block: 4px;
   padding-inline: 8px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: Arial, Verdana, sans-serif;
   position: relative;
   display: flex;
@@ -42031,7 +42031,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
 .k-spreadsheet-view {
   height: auto !important;
   border-color: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: Arial, Verdana, sans-serif;
   flex: 1;
   position: relative;
@@ -42846,7 +42846,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   border-width: 1px;
   border-style: solid;
   box-sizing: content-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   text-align: start;
@@ -43745,7 +43745,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-flow: column nowrap;
@@ -43952,7 +43952,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
 
 .k-taskboard {
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   display: flex;
@@ -44198,7 +44198,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-flow: column nowrap;
@@ -44771,7 +44771,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -44930,7 +44930,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-flow: column nowrap;
@@ -45479,7 +45479,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   white-space: nowrap;
 }
 .k-task-details strong {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: normal;
   display: block;
 }
@@ -45890,7 +45890,7 @@ kendo-grid.k-grid .k-table-row.k-hover .k-grid-content-sticky.k-selected {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -46864,7 +46864,7 @@ kendo-scheduler .k-recurrence-editor {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -47321,7 +47321,7 @@ kendo-scheduler .k-recurrence-editor {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: block;
   position: relative;
@@ -47424,7 +47424,7 @@ kendo-scheduler .k-recurrence-editor {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: block;
   background-color: transparent;
@@ -47823,7 +47823,7 @@ kendo-scheduler .k-recurrence-editor {
   position: relative;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -48061,7 +48061,7 @@ kendo-scheduler .k-recurrence-editor {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   position: relative;
   overflow: hidden;
@@ -48283,7 +48283,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 }
 
 .k-var--chart-font {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .k-var--chart-title-font {
@@ -48307,7 +48307,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   box-sizing: border-box;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -48350,7 +48350,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 
 .k-chart-tooltip {
   border-radius: 4px;
-  font-size: 0.8361rem;
+  font-size: 0.78965rem;
   line-height: 1.7;
   padding-block: 4px;
   padding-inline: 8px;
@@ -48530,7 +48530,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   border-style: solid;
   outline: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   display: block;
   overflow: hidden;
@@ -48557,7 +48557,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   border-width: 0 0 1px;
   border-style: solid;
   border-color: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   background-position: 0 0;
   background-repeat: repeat-x;
 }
@@ -48590,10 +48590,10 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   right: 0;
 }
 .k-treemap .k-treemap-title + .k-treemap-wrap {
-  top: calc( 4px + (1.7 * 0.9rem) + 1px);
+  top: calc( 4px + (1.7 * 0.85rem) + 1px);
 }
 .k-treemap .k-treemap-title-vertical + .k-treemap-wrap {
-  left: calc( 4px + (1.7 * 0.9rem) + 1px);
+  left: calc( 4px + (1.7 * 0.85rem) + 1px);
 }
 .k-treemap .k-leaf {
   padding: 4px;
@@ -48963,7 +48963,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   box-sizing: border-box;
   border-width: 0px;
   border-style: solid;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   font-family: inherit;
 }
@@ -48999,7 +48999,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   padding-block: 2px;
   padding-inline: 4px;
   border-width: 0;
-  font-size: 0.675rem;
+  font-size: 0.6375rem;
   z-index: 1000;
 }
 
@@ -49092,7 +49092,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   padding-block: 24px;
   padding-inline: 24px;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: inherit;
   line-height: 1.7;
   overflow: auto;
@@ -49134,13 +49134,13 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 
 .k-orgchart-node-group-title {
   margin: 0 0 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.25;
 }
 
 .k-orgchart-node-group-subtitle {
   margin: 0 0 24px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .k-orgchart-card {
@@ -64119,19 +64119,19 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 }
 
 .k-font-size-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .\!k-font-size-md {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 .k-font-size-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .\!k-font-size-lg {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 .k-font-size-xl {
@@ -64159,19 +64159,19 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 }
 
 .k-fs-md {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .\!k-fs-md {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 .k-fs-lg {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .\!k-fs-lg {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 .k-fs-xl {
@@ -78188,7 +78188,7 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   margin-left: 5px;
 }
 .k-notification .k-notification-content {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   padding: 10px;
 }
 
@@ -78319,7 +78319,11 @@ piemers::before {
 
 html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-size: 0.85rem;
 }
 
 a {
@@ -78391,6 +78395,7 @@ a {
 }
 .vzd-menu > li {
   list-style: none;
+  margin-bottom: 7px;
 }
 .vzd-menu > li > a {
   display: flex;
@@ -78400,7 +78405,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .vzd-menu > li > a:hover {
   background-color: #d9d9d9;
@@ -78409,7 +78414,7 @@ a {
 }
 .vzd-menu > li > a::before {
   font-family: "WebComponentsIcons";
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-right: 5px;
   color: #990066;
@@ -78480,6 +78485,9 @@ a {
   background: #faf9f9;
   border-bottom: 1px solid #bcbcbc;
 }
+.k-menu.vzd-entry-menu span {
+  color: #333333;
+}
 .k-menu.vzd-entry-menu > li.active > a {
   color: #333333;
   position: relative;
@@ -78503,7 +78511,6 @@ a {
 
 .vzd-header {
   padding: 10px 20px;
-  border-bottom: 1px solid #bcbcbc;
   background-color: #faf9f9;
 }
 .vzd-header h1 {

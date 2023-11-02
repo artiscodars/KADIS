@@ -12,6 +12,10 @@ html {
   font-family: $kendo-font-family-sans-serif;
 }
 
+body {
+  font-size: $kendo-font-size;
+}
+
 a {
   color: $kendo-color-info;
 }
@@ -77,6 +81,7 @@ a {
 
   > li {
     list-style: none;
+    margin-bottom: 7px;
     > a {
       display: flex;
       align-items: center;
@@ -225,6 +230,9 @@ a {
   &.vzd-entry-menu {
     background: $kendo-color-light;
     border-bottom: 1px solid $kendo-component-border;
+    span {
+      color: $kendo-body-text;
+    }
 
     > li.active {
       > a {
@@ -253,7 +261,7 @@ a {
 
 .vzd-header {
   padding: 10px 20px;
-  border-bottom: 1px solid $kendo-component-border;
+  //border-bottom: 1px solid $kendo-component-border;
   background-color: $kendo-color-light;
 
   h1 {

@@ -54,42 +54,107 @@
         <h2>Ikonas</h2>
         <h3>Speciālās ikonas</h3>
 
-        <div class="k-mb-4">
-          <i class="icon icon-dv k-color-primary"></i> DARBVIRSMA
-        </div>
-        <div class="k-mb-4">
-          <i class="icon icon-uz k-color-primary"></i> UZDEVUMI
-        </div>
-        <div class="k-mb-4">
-          <i class="icon icon-pa k-color-primary"></i> PASŪTĪJUMI
-        </div>
-        <div class="k-mb-4">
-          <i class="icon icon-zv k-color-primary"></i> ZEMES VIENĪBAS
-        </div>
-        <div class="k-mb-4">
-          <i class="icon icon-ad k-color-primary"></i> ADMISTRĒŠANA
-        </div>
-
-        <script src="https://gist.github.com/artiscodars/434e16581d9b841770ab9108bc4dfb4e.js"></script>
-
-        <h3>Citas ikonas</h3>
+        <p>
+          Ikonas, kas nav atrodamas Telerik ikonu sarakstā var tik izveidotas
+          atseviški kā SVG faili un importēti Fontello (<a
+            href="https://fontello.com"
+            target="_blank"
+            >https://fontello.com</a
+          >/) ikonu ģeneratorā. Turpat ir atrodas arī citas ikonas, kas var tik
+          izmantotas.
+        </p>
 
         <p>
-          Var izmantot Telerik UI
+          Lai papildinātu šo ikonu sarakstu Fontello ģeneratorā ir jāiekopē SVG
+          fails no šī repozitorija "\icons\font" direktorijas un jāpapildina ar
+          nepieciešamajām ikonām un tās jāeksportē.
+        </p>
+        <p>
+          <a href="icons/demo.html" target="_blank"
+            >Piemērā aplukojamās ikonas.</a
+          >
+        </p>
+
+        <div class="bd-example">
+          <div class="container" id="icons">
+            <div class="row">
+              <div class="span3" title="Code: 0xe800">
+                <i class="demo-icon icon-ad"></i>
+                <span class="i-name">icon-ad</span>
+              </div>
+              <div class="span3" title="Code: 0xe801">
+                <i class="demo-icon icon-dv"></i>
+                <span class="i-name">icon-dv</span>
+              </div>
+              <div class="k-flex">
+                <i class="demo-icon icon-pa"></i>
+                <span class="i-name">icon-pa</span>
+              </div>
+              <div class="span3" title="Code: 0xe803">
+                <i class="demo-icon icon-uz"></i>
+                <span class="i-name">icon-uz</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="span3" title="Code: 0xe804">
+                <i class="demo-icon icon-zv"></i>
+                <span class="i-name">icon-zv</span>
+              </div>
+              <div class="span3" title="Code: 0xf153">
+                <i class="demo-icon icon-euro"></i>
+                <span class="i-name">icon-euro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          Klases piemērs: "icon icon-<b style="color: red">{mainīgais}</b>".
+        </p>
+
+        <h3>Telerik ikonas</h3>
+
+        <div class="bd-example">
+          <span class="k-font-icon k-i-star"></span>
+          <span class="k-font-icon k-i-bell"></span>
+          <span class="k-font-icon k-i-plus-circle"></span>
+        </div>
+        <p>
           <a
             href="https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/"
             target="_blank"
-            >ikonas</a
+            >Telerik UI ikonas</a
           >. Klases piemērs:
           <i>"k-font-icon k-i-<b style="color: red">{mainīgais}</b>"</i>.
         </p>
 
-        <p>
-          <span class="k-font-icon k-i-star"></span>
-          <span class="k-font-icon k-i-bell"></span>
-          <span class="k-font-icon k-i-plus-circle"></span>
-        </p>
-        <script src="https://gist.github.com/artiscodars/a4fee8f4317c61396e8f65c0291aa84a.js"></script>
+        <h3>Biežāk izmantotās ikonas</h3>
+        <div class="bd-example">
+          <button
+            class="k-button k-button-md k-rounded-md k-button-clear k-button-clear-error"
+          >
+            <span class="k-font-icon k-i-delete"></span>
+          </button>
+          - Dzēst<br />
+          <button
+            class="k-button k-button-md k-rounded-md k-button-clear k-button-clear-secondary"
+          >
+            <span class="k-font-icon k-i-print"></span>
+          </button>
+          - Drukāt <br />
+          <button
+            class="k-button k-button-md k-rounded-md k-button-clear k-button-clear-success"
+          >
+            <span class="k-font-icon k-i-edit"></span>
+          </button>
+          - Labot <br />
+          <button
+            class="k-button k-button-md k-rounded-md k-button-clear k-button-clear-secondary"
+          >
+            <i class="icon icon-euro"></i>
+          </button>
+          - Apmaksāt
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>

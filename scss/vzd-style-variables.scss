@@ -21,12 +21,13 @@ $kendo-color-grey: #d9d9d9;
 
 $kendo-font-size-xs: 0.7rem !default;
 $kendo-font-size-sm: 0.8rem !default;
-$kendo-font-size: 0.9rem !default;
+$kendo-font-size: 0.85rem !default;
 $kendo-font-size-md: $kendo-font-size !default;
-$kendo-font-size-lg: 1.1rem !default;
+$kendo-font-size-lg: 1rem !default;
 $kendo-font-size-xl: 1.2rem !default;
 
-$kendo-font-family-sans-serif: "Open Sans", sans-serif !default; //"Verdana", sans-serif !default;
+$kendo-font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial,
+  sans-serif !default;
 
 $kendo-input-padding-x: 10px !default;
 $kendo-input-padding-y: 5px !default;
