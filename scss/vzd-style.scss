@@ -89,7 +89,7 @@ a {
       color: $kendo-body-text;
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
       font-size: $kendo-font-size;
 
       &:hover {
@@ -204,7 +204,7 @@ a {
       height: unset;
       a {
         height: unset;
-        font-weight: 600;
+        font-weight: 500;
       }
     }
   }
@@ -273,7 +273,7 @@ a {
     &::before {
       margin-right: 10px;
       font-family: "WebComponentsIcons";
-      font-size: 24px;
+      font-size: 20px;
       color: $kendo-color-primary;
       font-weight: normal;
     }

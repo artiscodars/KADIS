@@ -78200,8 +78200,16 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
   color: white;
 }
 
+.k-expander-title {
+  color: #333333;
+}
+
 .k-breadcrumb {
   background: transparent;
+}
+.k-breadcrumb .k-breadcrumb-link {
+  color: #06c;
+  text-decoration: underline;
 }
 .k-breadcrumb .k-breadcrumb-last-item a {
   color: #333333;
@@ -78217,37 +78225,37 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 
 h1,
 .h1 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 h2,
 .h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 h3,
 .h3 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 h4,
 .h4 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 h5,
 .h5 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 h6,
 .h6 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
@@ -78404,7 +78412,7 @@ a {
   color: #333333;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.85rem;
 }
 .vzd-menu > li > a:hover {
@@ -78466,7 +78474,7 @@ a {
 }
 .vzd-menu > li .submenu a {
   height: unset;
-  font-weight: 600;
+  font-weight: 500;
 }
 .vzd-menu.vzd-active a {
   background-color: #e0e0e0;
@@ -78523,7 +78531,7 @@ a {
 .vzd-header h1::before {
   margin-right: 10px;
   font-family: "WebComponentsIcons";
-  font-size: 24px;
+  font-size: 20px;
   color: #990066;
   font-weight: normal;
 }
