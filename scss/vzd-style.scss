@@ -14,21 +14,20 @@ html {
 
 body {
   font-size: $kendo-font-size;
+  height: 100%;
+  position: relative;
 }
 
 a {
   color: $kendo-color-info;
 }
 .vzd-body {
-  background: $kendo-color-light;
+  background: #fff;
   padding-left: 220px;
   margin: 0;
   height: 100%;
   &.vzd-my-tasks {
     padding-right: 270px;
-    .vzd-container {
-      border-right: 1px solid #bcbcbc;
-    }
   }
 }
 .vzd-left-bar {
@@ -38,6 +37,8 @@ a {
   top: 0;
   width: 220px;
   z-index: 3;
+  background: $kendo-color-light;
+  border-right: 1px solid #bcbcbc;
 }
 
 .vzd-right-bar {
@@ -48,6 +49,8 @@ a {
   width: 250px;
   z-index: 3;
   padding: 10px;
+  background: $kendo-color-light;
+  border-left: 1px solid #bcbcbc;
 }
 .vzd-logo {
   margin: auto;
@@ -265,8 +268,23 @@ a {
 
 .vzd-container {
   background: #fff;
-  min-height: 100%;
+  min-height: calc(100% - 100px);
   border-left: 1px solid $kendo-component-border;
+  padding-bottom: 100px;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    background: url("../images/eraf.svg") no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 70px;
+    width: 500px;
+  }
 }
 
 .vzd-header {
