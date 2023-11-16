@@ -240,7 +240,6 @@ a {
 .k-menu {
   &.vzd-entry-menu {
     background: $kendo-color-light;
-    border-bottom: 1px solid $kendo-component-border;
     span {
       color: $kendo-body-text;
     }
@@ -375,6 +374,7 @@ a {
 
 .vzd-content-holder {
   padding: 20px;
+  border-top: 1px solid #ccc;
 }
 
 .vzd-user {

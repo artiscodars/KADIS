@@ -78500,7 +78500,6 @@ a {
 
 .k-menu.vzd-entry-menu {
   background: #faf9f9;
-  border-bottom: 1px solid #bcbcbc;
 }
 .k-menu.vzd-entry-menu span {
   color: #333333;
@@ -78587,6 +78586,7 @@ a {
 
 .vzd-content-holder {
   padding: 20px;
+  border-top: 1px solid #ccc;
 }
 
 .vzd-user {
