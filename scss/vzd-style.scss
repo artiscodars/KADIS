@@ -225,6 +225,17 @@ a {
     margin: 0 !important;
     color: $kendo-color-primary;
   }
+
+  .k-svg-icon > svg {
+    display: none;
+  }
+  span.k-svg-icon.k-svg-i-caret-alt-right.k-menu-expand-arrow-icon:before {
+    display: inline-block;
+    content: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZm9jdXNhYmxlPSJmYWxzZSIgZmlsbD0iIzk5MDA2NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTU4LjA1OSAxMjkuOTQxIDEyNi4wNiAxMjYuMDYtMTI2LjA2IDEyNi4wNjFMMTkyIDQxNmwxNjAtMTU5Ljk5OUwxOTIgOTZsLTMzLjk0MSAzMy45NDF6Ij48L3BhdGg+PC9zdmc+);
+    width: 12px;
+    height: 12px;
+    margin-top: -4px;
+  }
 }
 .k-menu {
   &.vzd-entry-menu {
